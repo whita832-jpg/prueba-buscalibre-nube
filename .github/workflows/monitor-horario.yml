@@ -2,6 +2,9 @@ name: Monitor BuscaLibre — historial y alertas
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/monitor-horario.yml'
 
 permissions:
   contents: write
