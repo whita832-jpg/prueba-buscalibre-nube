@@ -1,0 +1,50 @@
+name: Diagnóstico de acceso gratuito a BuscaLibre
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/diagnostico-acceso.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  probar-acceso:
+    name: Probar ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 8
+    steps:
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar requests
+        run: python -m pip install requests
+      - name: Probar solicitudes directas sin token ni proxies
+        shell: bash
+        run: |
+          python - <<'PY'
+          import requests
+          targets = [
+              "https://www.buscalibre.com.mx/libros/editorial/alba",
+              "https://www.buscalibre.com.mx/libros/editorial/acantilado",
+          ]
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+              "Accept-Language": "es-MX,es;q=0.9",
+          }
+          for url in targets:
+              try:
+                  r = requests.get(url, headers=headers, timeout=20)
+                  print("URL:", url)
+                  print("HTTP:", r.status_code, "bytes:", len(r.content))
+                  print("Tiene fichas de libros:", "box-producto" in r.text)
+              except requests.RequestException as exc:
+                  print("Error de red:", type(exc).__name__, str(exc)[:160])
+          PY
