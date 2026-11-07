@@ -1,0 +1,49 @@
+{
+ "history": {},
+ "alerted": {},
+ "direct_status": {},
+ "last_scan": {
+  "utc": "2026-11-07T23:44:18+00:00",
+  "complete": false,
+  "catalogs": [
+   {
+    "name": "Alba",
+    "pages_complete": 0,
+    "partial": [],
+    "failed": [
+     1
+    ],
+    "closed": false
+   },
+   {
+    "name": "Alba Editorial",
+    "pages_complete": 0,
+    "partial": [],
+    "failed": [
+     1
+    ],
+    "closed": false
+   },
+   {
+    "name": "Acantilado",
+    "pages_complete": 0,
+    "partial": [],
+    "failed": [
+     1
+    ],
+    "closed": false
+   },
+   {
+    "name": "El Acantilado",
+    "pages_complete": 0,
+    "partial": [],
+    "failed": [
+     1
+    ],
+    "closed": false
+   }
+  ],
+  "products": 0,
+  "candidates": 0
+ }
+}
