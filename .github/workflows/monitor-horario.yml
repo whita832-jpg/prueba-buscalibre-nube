@@ -42,7 +42,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python monitor.py --mode monitor --source direct --parallel 1
+          SCRAPINGANT_API_TOKEN: ${{ secrets.SCRAPINGANT_API_TOKEN }}
+        run: python monitor.py --mode monitor --source auto --parallel 1
 
       - name: Guardar historial y estado de cobertura en GitHub
         if: always()
