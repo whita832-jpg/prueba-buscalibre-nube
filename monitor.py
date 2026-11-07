@@ -43,7 +43,7 @@ MAX_PAGES = 1000
 API_GAP = 0.3  # segundos entre inicios de solicitudes; 1 sola en plan gratis
 RETRY_COUNT = 3
 FIELDS = ['catalogo','pagina','titulo','autor','edicion','formato_catalogo','precio_mxn','url','candidato_menos_200']
-USER_AGENT = 'BuscaLibrePriceMonitor/1.0 (consulta personal de precios; contacto a través del usuario)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 API_LAST = 0.0
 API_LOCK = threading.Lock()
 
@@ -139,7 +139,7 @@ class Transport:
 
     def _direct(self,url):
         try:
-            r=requests.get(url,timeout=12,headers={'User-Agent':USER_AGENT,'Accept-Language':'es-MX,es;q=0.9'})
+            r=requests.get(url,timeout=12,headers={'User-Agent':USER_AGENT,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Accept-Language':'es-MX,es;q=0.9'})
         except requests.RequestException as e:
             raise FetchError('NETWORK',type(e).__name__) from e
         if r.status_code!=200:raise FetchError(r.status_code,'Acceso directo rechazado')
