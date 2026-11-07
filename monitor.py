@@ -139,16 +139,29 @@ class Transport:
         self.direct_calls=0;self.api_calls=0;self.api_credits=0
 
     def _direct(self,url):
-        try:
-            r=requests.get(url,timeout=12,headers={'User-Agent':USER_AGENT,'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Accept-Language':'es-MX,es;q=0.9'})
-        except requests.RequestException as e:
-            raise FetchError('NETWORK',type(e).__name__) from e
-        if r.status_code!=200:raise FetchError(r.status_code,'Acceso directo rechazado')
-        if not ('buscalibre' in r.url.lower()):raise FetchError('REDIRECT','Redirección a otro dominio')
-        h=r.text
-        if len(h)<1800 or any(s in norm(h[:9000]) for s in ('captcha', 'access denied', 'acceso denegado')):
-            raise FetchError('HTML','Página incompleta o bloqueo')
-        return h
+        # Los servidores compartidos de GitHub reciben ocasionalmente HTTP 403.
+        # Reintentar con pausas pequeñas, sin recurrir a servicios de pago.
+        headers={'User-Agent':USER_AGENT,
+                 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                 'Accept-Language':'es-MX,es;q=0.9'}
+        for attempt,delay in enumerate((0,4,12)):
+            if delay:time.sleep(delay)
+            try:
+                r=requests.get(url,timeout=18,headers=headers)
+            except requests.RequestException as e:
+                if attempt<2:continue
+                raise FetchError('NETWORK',type(e).__name__) from e
+            if r.status_code in (403,429,500,502,503,504) and attempt<2:
+                continue
+            if r.status_code!=200:
+                raise FetchError(r.status_code,'Acceso directo rechazado')
+            if 'buscalibre' not in r.url.lower():
+                raise FetchError('REDIRECT','Redirección a otro dominio')
+            h=r.text
+            if len(h)<1800 or any(t in norm(h[:9000]) for t in ('captcha','access denied','acceso denegado')):
+                raise FetchError('HTML','Página incompleta o bloqueo')
+            return h
+        raise FetchError('NETWORK','Reintentos sin respuesta')
 
     def _scrapingant(self,url):
         if not self.token:raise FetchError('SIN TOKEN','No hay clave ScrapingAnt; use --source direct o configure el token')
