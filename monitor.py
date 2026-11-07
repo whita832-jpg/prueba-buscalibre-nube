@@ -135,7 +135,7 @@ class Transport:
         self.env='github' if os.environ.get('GITHUB_ACTIONS')=='true' else 'local'
         self.direct_status=stored.setdefault('direct_status',{})
         until=self.direct_status.get(self.env,'')
-        self.direct_enabled=(source in ('auto','direct')) and (source=='direct' or until<=today())
+        self.direct_enabled=(source in ('auto','direct'))  # reintentar acceso gratis en cada ejecución
         self.direct_calls=0;self.api_calls=0;self.api_credits=0
 
     def _direct(self,url):
@@ -203,10 +203,12 @@ class Transport:
                 if not valid:raise FetchError('HTML','No se encontraron fichas del primer catálogo')
                 return Receipt(html,0,0,1)
             except FetchError:
-                if self.source=='direct':raise
-                # Una comprobación diaria por entorno; no perder tiempo con 53 fallos directos.
+                # Conservar la causa real si no se configuró un respaldo.
+                if self.source=='direct' or not self.token:raise
+                # Si el acceso directo falla, usar la API sólo durante esta ejecución.
+                # Al iniciar la próxima hora, volver a intentar gratis.
                 self.direct_enabled=False
-                self.direct_status[self.env]=(date.today()+timedelta(days=1)).isoformat()
+                self.direct_status[self.env]=today()
         b0=self.api_credits
         html=self._scrapingant(url)
         return Receipt(html,self.api_calls-a0,self.api_credits-b0,self.direct_calls-d0)
