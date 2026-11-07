@@ -12,6 +12,7 @@ import ctypes
 from ctypes import wintypes
 from dataclasses import dataclass, field
 from datetime import datetime, timezone, date, timedelta
+from zoneinfo import ZoneInfo
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
@@ -49,7 +50,7 @@ API_LOCK = threading.Lock()
 
 
 def now(): return datetime.now(timezone.utc).isoformat(timespec='seconds')
-def today(): return datetime.now(timezone.utc).date().isoformat()
+def today(): return datetime.now(ZoneInfo('America/Mexico_City')).date().isoformat()
 def clean(s): return re.sub(r'\s+', ' ', s or '').strip()
 def txt(el): return clean(el.get_text(' ', strip=True)) if el else ''
 def norm(s): return ''.join(x for x in unicodedata.normalize('NFKD', (s or '').casefold()) if not unicodedata.combining(x))
@@ -363,7 +364,6 @@ def update_history(st,rows):
             hi=max(hi,amount) if hi is not None else amount
         else:lo=hi=amount
         ent['days'][d]={'min':f'{lo:.2f}','max':f'{hi:.2f}'}
-        ent['last_seen_utc']=now()
     for ent in st['history'].values():
         for day in list(ent.get('days',{})):
             if day<oldest:del ent['days'][day]
@@ -426,6 +426,21 @@ def check_offers(trans,records,st):
     return low,checked,offers
 
 
+def send_telegram_text(message):
+    token=os.environ.get('TELEGRAM_BOT_TOKEN','').strip()
+    dest=os.environ.get('TELEGRAM_CHAT_ID','').strip()
+    if not token or not dest:
+        return False,'Telegram pendiente de configurar'
+    try:
+        response=requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
+            data={'chat_id':dest,'text':message,'disable_web_page_preview':'true'},timeout=20)
+        if response.status_code==200 and response.json().get('ok'):
+            return True,'Enviado'
+        return False,f'HTTP {response.status_code}'
+    except (requests.RequestException,ValueError) as e:
+        return False,type(e).__name__
+
+
 def send_telegram(offer):
     tok=os.environ.get('TELEGRAM_BOT_TOKEN','').strip();dest=os.environ.get('TELEGRAM_CHAT_ID','').strip()
     if not tok or not dest:return False,'Faltan TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID'
@@ -436,11 +451,7 @@ def send_telegram(offer):
          f'Precio observado anteriormente: ${offer["precio_referencia"]} MXN '
          f'(>= $400 en {offer["dias_referencia"]} días distintos; no precio tachado)\n'
          f'Existencias: {offer["existencias"]}\n{offer["url"]}')
-    try:
-        response=requests.post(f'https://api.telegram.org/bot{tok}/sendMessage',
-            data={'chat_id':dest,'text':msg,'disable_web_page_preview':'true'},timeout=20)
-        return (True,'Enviado') if response.status_code==200 and response.json().get('ok') else (False,f'HTTP {response.status_code}')
-    except (requests.RequestException,ValueError) as e:return False,type(e).__name__
+    return send_telegram_text(msg)
 
 
 def write_csv(file,rows,columns):
@@ -460,22 +471,45 @@ def scan(token,source,mode,parallel=1):
             pending=[c for c in catalogs if not c.finished]
             list(executor.map(lambda c: one_page(c,trans), pending))
     rows=[x for c in catalogs for x in c.records]
-    # Se evalúa el histórico ANTERIOR a registrar los precios actuales.
-    low,checked,offers=check_offers(trans,rows,st)
-    update_history(st,rows)
+    full=all(c.closed and not c.partial and not c.failed for c in catalogs)
+    # Nunca generar avisos de ofertas ni incorporar precios históricos de un
+    # recorrido incompleto; podría faltar justo el libro con una gran rebaja.
+    if full:
+        low,checked,offers=check_offers(trans,rows,st)
+        update_history(st,rows)
+    else:
+        low=[x for x in rows if x['candidato_menos_200']=='SI']
+        checked=[]
+        offers=[]
+    st['last_scan']={
+        'utc':now(), 'complete':full, 'catalogs':[
+            {'name':c.name,'pages_complete':len(c.full),
+             'partial':c.partial,'failed':c.failed,'closed':c.closed}
+            for c in catalogs],
+        'products':len(rows), 'candidates':len(low),
+    }
     messages=[]
-    if mode=='monitor':
+    if mode=='monitor' and full:
         for offer in offers:
             ok,reason=send_telegram(offer)
             messages.append(f'{offer["titulo"]}: {reason}')
             if ok:st['alerted'][offer['url']]={'price':offer['precio_mxn'],
                     'reference':offer['precio_referencia'],'at':now()}
+    if mode=='monitor' and not full and st.get('last_failure_notice_day')!=today():
+        problem=', '.join(
+            f'{c.name}: parciales {c.partial}, errores {c.failed}, cierre {c.closed}'
+            for c in catalogs if not c.closed or c.partial or c.failed)
+        ok,reason=send_telegram_text(
+            '⚠️ MONITOR BUSCALIBRE: revisión incompleta. '
+            'No se generan alertas de ofertas ni se actualiza el histórico.\n'
+            + problem + '\nRevisa GitHub Actions.')
+        messages.append('Cobertura incompleta: '+reason)
+        if ok:st['last_failure_notice_day']=today()
     (DIR/'estado_monitor_v7.json').write_text(json.dumps(st,ensure_ascii=False,indent=1)+'\n',encoding='utf-8')
     write_csv('todos_los_libros_v7.csv',rows,FIELDS)
     write_csv('candidatos_menos_200_v7.csv',low,FIELDS)
     write_csv('verificacion_candidatos_v7.csv',checked,FIELDS+['resultado','categoria','encuadernacion_ficha','precio_referencia','dias_referencia','existencias'])
     write_csv('ofertas_confirmadas_v7.csv',offers,FIELDS+['precio_referencia','dias_referencia','categoria','encuadernacion_ficha','existencias','confirmado_utc'])
-    full=all(c.closed and not c.partial and not c.failed for c in catalogs)
     lines=['MONITOR BUSCALIBRE V7 (criterios estrictos)',f'Inicio UTC: {start_at}',f'Fin UTC: {now()}',
            f'Duración: {time.monotonic()-started:.1f} segundos',f'Modo: {mode}; fuente: {source}; concurrencia: {parallel}',
            'Requisitos: NOVELA + TAPA DURA + PRECIO ACTUAL <200 + >=400 OBSERVADO EN 3 DÍAS DISTINTOS ANTERIORES.',
