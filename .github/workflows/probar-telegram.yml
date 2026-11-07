@@ -1,0 +1,39 @@
+name: Probar aviso de Telegram
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mensaje:
+    runs-on: macos-latest
+    timeout-minutes: 5
+    steps:
+      - name: Enviar mensaje de prueba de forma privada
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 - <<'PY'
+          import os, json, urllib.request, urllib.parse, urllib.error
+          token = os.environ.get('TELEGRAM_BOT_TOKEN','')
+          dest = os.environ.get('TELEGRAM_CHAT_ID','')
+          if not token or not dest:
+              raise SystemExit('Faltan los secretos TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID')
+          url = f'https://api.telegram.org/bot{token}/sendMessage'
+          body = urllib.parse.urlencode({
+              'chat_id':dest,
+              'text':'✅ Prueba del monitor de BuscaLibre: Telegram funciona. No es una oferta.'
+          }).encode()
+          try:
+              with urllib.request.urlopen(urllib.request.Request(url, data=body, method='POST'), timeout=20) as r:
+                  data = json.loads(r.read().decode())
+              if data.get('ok'):
+                  print('Mensaje de prueba entregado.')
+              else:
+                  raise SystemExit('Telegram no confirmó el mensaje.')
+          except urllib.error.HTTPError as exc:
+              raise SystemExit(f'La API de Telegram respondió HTTP {exc.code}') from None
+          PY
