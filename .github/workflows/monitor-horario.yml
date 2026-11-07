@@ -54,7 +54,21 @@ jobs:
             git add estado_monitor_v7.json
             if ! git diff --cached --quiet; then
               git commit -m "Actualización automática de precios y cobertura [skip ci]"
-              git push origin HEAD:main
+              # El repositorio puede haber avanzado durante el escaneo.
+              # Reconciliar cambios sin sobrescribir historial ni código.
+              for intento in 1 2 3; do
+                git fetch origin main
+                git rebase origin/main
+                if git push origin HEAD:main; then
+                  echo "Historial conservado en GitHub."
+                  break
+                fi
+                if [ "$intento" -eq 3 ]; then
+                  echo "::error::No se pudo persistir el historial."
+                  exit 1
+                fi
+                sleep 3
+              done
             else
               echo "El historial no ha cambiado."
             fi
@@ -70,6 +84,7 @@ jobs:
           name: resultados-buscalibre-${{ github.run_number }}
           path: |
             reporte_integral_v7.txt
+            estado_monitor_v7.json
             todos_los_libros_v7.csv
             candidatos_menos_200_v7.csv
             verificacion_candidatos_v7.csv
