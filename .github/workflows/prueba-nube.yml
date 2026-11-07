@@ -2,13 +2,16 @@ name: PRUEBA GRATUITA - BuscaLibre desde GitHub
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/prueba-nube.yml'
 
 permissions:
   contents: read
 
 jobs:
   prueba:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 15
     steps:
       - name: Obtener codigo
