@@ -1,0 +1,44 @@
+name: PRUEBA GRATUITA - BuscaLibre desde GitHub
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obtener codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Ejecutar verificaciones internas
+        run: python monitor.py --self-test
+
+      - name: Probar los cuatro catalogos desde la nube sin API ni alertas
+        id: scan
+        run: python monitor.py --mode test --source direct --parallel 1
+
+      - name: Guardar reporte y CSV para descargar
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultado-prueba-nube-${{ github.run_number }}
+          path: |
+            reporte_integral_v7.txt
+            todos_los_libros_v7.csv
+            candidatos_menos_200_v7.csv
+            verificacion_candidatos_v7.csv
+            ofertas_confirmadas_v7.csv
+          if-no-files-found: warn
+          retention-days: 7
