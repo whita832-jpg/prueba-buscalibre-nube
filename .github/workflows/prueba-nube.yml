@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - '.github/workflows/prueba-nube.yml'
+      - 'monitor.py'
 
 permissions:
   contents: read
