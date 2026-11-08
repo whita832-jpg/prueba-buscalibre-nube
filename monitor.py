@@ -47,9 +47,6 @@ FIELDS = ['catalogo','pagina','titulo','autor','edicion','formato_catalogo','pre
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 API_LAST = 0.0
 API_LOCK = threading.Lock()
-DIRECT_LOCK = threading.Lock()
-DIRECT_LAST = 0.0
-DIRECT_GAP = 5.0  # mínimo entre consultas directas, incluida la primera tras otra petición
 
 
 def now(): return datetime.now(timezone.utc).isoformat(timespec='seconds')
@@ -142,19 +139,12 @@ class Transport:
         self.direct_calls=0;self.api_calls=0;self.api_credits=0
 
     def _direct(self,url):
-        # Evitar ráfagas: a lo sumo una solicitud cada 5 segundos.
-        # Si el primer GET obtiene 403, el origen del servidor también
-        # podría estar bloqueado; la demora no garantiza acceso.
-        global DIRECT_LAST
+        # Reintentar temporalmente sin retrasar las consultas exitosas.
         headers={'User-Agent':USER_AGENT,
                  'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                  'Accept-Language':'es-MX,es;q=0.9'}
-        for attempt,delay in enumerate((0,10,20)):
+        for attempt,delay in enumerate((0,4,12)):
             if delay:time.sleep(delay)
-            with DIRECT_LOCK:
-                wait=DIRECT_GAP-(time.monotonic()-DIRECT_LAST)
-                if wait>0:time.sleep(wait)
-                DIRECT_LAST=time.monotonic()
             try:
                 r=requests.get(url,timeout=18,headers=headers)
             except requests.RequestException as e:
