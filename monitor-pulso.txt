@@ -1,0 +1,4 @@
+# Pulso de respaldo para GitHub Actions
+# Este archivo solo se actualiza cuando no ha habido una revisión reciente.
+# La escritura provoca el evento push del workflow principal.
+Último pulso manual de prueba: sin ejecutar
