@@ -46,10 +46,19 @@ El monitor intenta primero el acceso directo **en cada ejecución**, incluso si 
 ## Consultar las ejecuciones
 
 - **Monitor BuscaLibre — historial y alertas**: contiene la tarea manual y programada.
-- El horario está expresado en UTC: `17 * * * *` significa aproximadamente el minuto 17 de cada hora.
+- El horario está expresado en UTC: `23 * * * *` significa aproximadamente el minuto 23 de cada hora.
 - El reporte y los CSV se guardan durante siete días como **Artifacts** en cada ejecución.
 - `estado_monitor_v7.json` contiene el histórico de precios y el último resultado; no contiene credenciales.
 - Puede existir un bloqueo HTTP 403 intermitente desde GitHub. Los intentos fallidos se registran y no se presentan como revisiones completadas.
+
+
+## Recuperación si GitHub no ejecuta el cron
+
+El workflow principal está activo en GitHub, pero el 7 de noviembre de 2026 la API registró **cero eventos schedule** incluso después de varias horas; las ejecuciones lanzadas por `push` sí funcionaban. Se reescribió el cron al minuto 23 para intentar registrar nuevamente el horario. GitHub advierte que los eventos programados pueden retrasarse u omitirse.
+
+Como respaldo, la automatización de ChatGPT **Respaldo automático BuscaLibre** comprueba cada hora si hubo ejecuciones recientes. Si no hubo ninguna en los últimos 55 minutos, actualiza `monitor-pulso.txt`; ese cambio activa el monitor mediante `push`. Si el cron funciona normalmente, el respaldo no crea revisiones extra. Este mecanismo es independiente del computador del usuario pero no garantiza la puntualidad exacta: las tareas de ChatGPT y GitHub también pueden retrasarse.
+
+Antes de cada revisión GitHub sincroniza el estado más reciente de `main`. Para guardar datos, `fusionar_estado.py` fusiona los mínimos y máximos observados por fecha, alertas y marcas del último escaneo. Esto evita conflictos de Git cuando el repositorio cambia durante una ejecución. No usar `git push --force` para estos datos.
 
 ## Coste y limitaciones
 
