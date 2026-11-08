@@ -24,7 +24,9 @@ jobs:
           token = os.environ.get('TELEGRAM_BOT_TOKEN','')
           dest = os.environ.get('TELEGRAM_CHAT_ID','')
           if not token or not dest:
-              raise SystemExit('Faltan los secretos TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID')
+              if not token: print('FALTA: TELEGRAM_BOT_TOKEN (vacío o no disponible en este repositorio)')
+              if not dest: print('FALTA: TELEGRAM_CHAT_ID (vacío o no disponible en este repositorio)')
+              raise SystemExit('Configura los secretos en Settings > Secrets and variables > Actions > Repository secrets')
           url = f'https://api.telegram.org/bot{token}/sendMessage'
           body = urllib.parse.urlencode({
               'chat_id':dest,
