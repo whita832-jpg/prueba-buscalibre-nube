@@ -18703,6 +18703,38 @@
      "max": "399.00"
     }
    }
+  },
+  "https://www.buscalibre.com.mx/libro-pequena-grande-ada-lovelace/9788490653548/p/49087953": {
+   "days": {
+    "2026-11-07": {
+     "min": "485.43",
+     "max": "485.43"
+    }
+   }
+  },
+  "https://www.buscalibre.com.mx/libro-pequeno-grande-mahatma-gandhi/9788490655221/p/51379097": {
+   "days": {
+    "2026-11-07": {
+     "min": "497.42",
+     "max": "497.42"
+    }
+   }
+  },
+  "https://www.buscalibre.com.mx/libro-petita-gran-clara-campoamor/9788490659069/p/54359047": {
+   "days": {
+    "2026-11-07": {
+     "min": "485.43",
+     "max": "485.43"
+    }
+   }
+  },
+  "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514": {
+   "days": {
+    "2026-11-07": {
+     "min": "485.43",
+     "max": "485.43"
+    }
+   }
   }
  },
  "alerted": {},
@@ -18710,47 +18742,39 @@
   "github": "2026-11-07"
  },
  "last_scan": {
-  "utc": "2026-11-08T00:35:23+00:00",
-  "complete": false,
+  "utc": "2026-11-08T00:37:50+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
-    "pages_complete": 0,
+    "pages_complete": 8,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
-    "pages_complete": 0,
+    "pages_complete": 1,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Acantilado",
-    "pages_complete": 0,
+    "pages_complete": 1,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "El Acantilado",
-    "pages_complete": 0,
+    "pages_complete": 1,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    }
   ],
-  "products": 0,
+  "products": 387,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07"
