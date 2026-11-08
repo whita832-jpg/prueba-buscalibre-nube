@@ -2,9 +2,6 @@ name: Prueba directa lenta sin notificaciones
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/prueba-directa-lenta.yml'
 
 permissions:
   contents: read
