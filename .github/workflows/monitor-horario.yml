@@ -36,7 +36,7 @@ jobs:
       - name: Probar reglas de precios y géneros
         run: python monitor.py --self-test
 
-      - name: Revisar las cuatro editoriales sin ScrapingAnt
+      - name: Revisar cuatro editoriales (acceso directo y respaldo opcional)
         id: scan
         continue-on-error: true
         env:
