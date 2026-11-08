@@ -1,0 +1,19 @@
+name: Diagnóstico temporal del programador GitHub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  cron-diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Registrar disparo
+        run: |
+          echo "Evento: ${{ github.event_name }}"
+          echo "Fecha UTC: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
