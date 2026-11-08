@@ -47,6 +47,9 @@ FIELDS = ['catalogo','pagina','titulo','autor','edicion','formato_catalogo','pre
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 API_LAST = 0.0
 API_LOCK = threading.Lock()
+DIRECT_LOCK = threading.Lock()
+DIRECT_LAST = 0.0
+DIRECT_GAP = 5.0  # mínimo entre consultas directas, incluida la primera tras otra petición
 
 
 def now(): return datetime.now(timezone.utc).isoformat(timespec='seconds')
@@ -139,13 +142,19 @@ class Transport:
         self.direct_calls=0;self.api_calls=0;self.api_credits=0
 
     def _direct(self,url):
-        # Los servidores compartidos de GitHub reciben ocasionalmente HTTP 403.
-        # Reintentar con pausas pequeñas, sin recurrir a servicios de pago.
+        # Evitar ráfagas: a lo sumo una solicitud cada 5 segundos.
+        # Si el primer GET obtiene 403, el origen del servidor también
+        # podría estar bloqueado; la demora no garantiza acceso.
+        global DIRECT_LAST
         headers={'User-Agent':USER_AGENT,
                  'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                  'Accept-Language':'es-MX,es;q=0.9'}
-        for attempt,delay in enumerate((0,4,12)):
+        for attempt,delay in enumerate((0,10,20)):
             if delay:time.sleep(delay)
+            with DIRECT_LOCK:
+                wait=DIRECT_GAP-(time.monotonic()-DIRECT_LAST)
+                if wait>0:time.sleep(wait)
+                DIRECT_LAST=time.monotonic()
             try:
                 r=requests.get(url,timeout=18,headers=headers)
             except requests.RequestException as e:
@@ -537,16 +546,8 @@ def scan(token,source,mode,parallel=1):
             messages.append(f'{offer["titulo"]}: {reason}')
             if ok:st['alerted'][offer['url']]={'price':offer['precio_mxn'],
                     'reference':offer['precio_referencia'],'at':now()}
-    if mode=='monitor' and not full and st.get('last_failure_notice_day')!=today():
-        problem=', '.join(
-            f'{c.name}: parciales {c.partial}, errores {c.failed}, cierre {c.closed}'
-            for c in catalogs if not c.closed or c.partial or c.failed)
-        ok,reason=send_telegram_text(
-            '⚠️ MONITOR BUSCALIBRE: revisión incompleta. '
-            'No se generan alertas de ofertas ni se actualiza el histórico.\n'
-            + problem + '\nRevisa GitHub Actions.')
-        messages.append('Cobertura incompleta: '+reason)
-        if ok:st['last_failure_notice_day']=today()
+    # El usuario solo desea mensajes de ofertas. La cobertura incompleta se
+    # registra en GitHub Actions y en el reporte, sin molestar por Telegram.
     (DIR/'estado_monitor_v7.json').write_text(json.dumps(st,ensure_ascii=False,indent=1)+'\n',encoding='utf-8')
     write_csv('todos_los_libros_v7.csv',rows,FIELDS)
     write_csv('candidatos_menos_200_v7.csv',low,FIELDS)
