@@ -2,12 +2,18 @@
 
 Este proyecto vigila **cuatro catálogos distintos** cada hora: Alba, Alba Editorial, Acantilado y El Acantilado.
 
+Cada catálogo lleva el filtro **Encuadernación → Tapa Dura** (`ff=tapa+dura`). El código comprueba que el filtro esté activado en el HTML; si no lo está, marca la revisión como incompleta. Se conserva el filtro al paginar y se comprueba el total declarado de libros para no solicitar páginas vacías superfluas.
+
+El 7 de noviembre de 2026, BuscaLibre mostraba aproximadamente 352 + 13 + 20 + 2 = **387 libros en tapa dura**, distribuidos en **11 páginas**. Antes se revisaban **50 páginas** sin filtrar; el ahorro esperado es de unas **42 llamadas por revisión** (53 frente a 11, sin reintentos). La cifra puede cambiar según el catálogo y el número de respuestas fallidas.
+
+**Límite:** el filtro depende de que BuscaLibre clasifique correctamente la encuadernación. Un libro etiquetado incorrectamente por la tienda podría omitirse. Además, el histórico de precios solo se forma para los libros observados en cada revisión.
+
 ## Estado actual
 
 - Ejecuta Python en los servidores **macOS estándar de GitHub Actions**; no necesita tu computadora encendida.
 - Primero usa acceso directo a BuscaLibre, **sin créditos**. Si GitHub recibe un bloqueo 403, existe un respaldo **opcional** mediante ScrapingAnt, únicamente cuando configures su token en los secretos de GitHub; sin ese token no gasta ningún crédito.
 - Guarda el historial en `estado_monitor_v7.json` después de cada ejecución.
-- Consulta todas las páginas de cada editorial hasta su final.
+- Consulta todas las páginas **filtradas por tapa dura** de cada editorial hasta su final; conserva el filtro en páginas posteriores.
 - Exige **novela + tapa dura + precio actual < $200 MXN + precio observado de $400 MXN o más durante tres fechas distintas anteriores + ficha y stock verificables**.
 - No se envían alertas cuando el género o el histórico no están confirmados.
 - Cuando falla la cobertura, la ejecución queda marcada como fallida y el historial de precios **no se actualiza** con datos parciales.
