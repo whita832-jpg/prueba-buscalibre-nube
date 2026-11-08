@@ -228,7 +228,8 @@ def extract_page(html,base,catalog,n):
     rows=[];issues=[];notes=[]
     # La página debe confirmar que el filtro de encuadernación está activo.
     checkbox=soup.select_one('input[name="ff"][value="tapa dura"]')
-    filter_ok=bool(checkbox and checkbox.has_attr('checked'))
+    check_visible=bool(checkbox and checkbox.has_attr('checked'))
+    requested=norm(parse_qs(urlparse(base).query).get('ff',[''])[0])=='tapa dura'
     count=re.search(r'Encontramos\s+([\d.,]+)\s+Libros',soup.get_text(' ',strip=True),re.I)
     total=int(re.sub(r'[^\d]','',count.group(1))) if count else None
     filter_inputs=[(x.get('value'),x.has_attr('checked')) for x in soup.select('input[name="ff"]')][:8]
@@ -258,6 +259,11 @@ def extract_page(html,base,catalog,n):
                          formato_catalogo='DURA' if f is True else 'NO DURA' if f is False else 'DESCONOCIDO',
                          precio_mxn=f'{current:.2f}',url=link,
                          candidato_menos_200='SI' if current<LIMIT else 'NO'))
+    # Algunos servidores no incluyen el atributo HTML "checked" en el filtro,
+    # aunque sí devuelven exclusivamente la encuadernación solicitada.
+    # En ese caso comprobar resultados, recuento y query del catálogo.
+    valid_books=len(rows)==len(cards) and all(hardcover(r['edicion']) is True for r in rows)
+    filter_ok=bool(requested and (check_visible or (total is not None and valid_books)))
     origin=urlparse(base)
     links={1}
     for a in soup.select('a[href]'):
@@ -589,6 +595,10 @@ def self_test():
     e=extract_page(demo,CATALOGS[0][1],'Alba',1)
     assert len(e['rows'])==1 and e['rows'][0]['precio_mxn']=='199.00'
     assert e['filter_ok'] and e['total']==1
+    no_checked=demo.replace(' checked="checked"','')
+    assert extract_page(no_checked,CATALOGS[0][1],'Alba',1)['filter_ok']
+    wrong_binding=no_checked.replace('Tapa Dura, Nuevo','Tapa Blanda, Nuevo')
+    assert not extract_page(wrong_binding,CATALOGS[0][1],'Alba',1)['filter_ok']
     st={'history':{'book':{'days':{
         '2026-11-01':{'min':'420.00'},'2026-11-02':{'min':'430.00'},
         '2026-11-03':{'min':'450.00'},'2026-11-04':{'min':'130.00'}}}}}
