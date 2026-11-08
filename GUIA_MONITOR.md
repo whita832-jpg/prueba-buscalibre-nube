@@ -12,7 +12,7 @@ El 7 de noviembre de 2026, BuscaLibre mostraba aproximadamente 352 + 13 + 20 + 2
 
 - Ejecuta Python en los servidores **macOS estándar de GitHub Actions**; no necesita tu computadora encendida.
 - Primero usa acceso directo a BuscaLibre, **sin créditos**. Si GitHub recibe un bloqueo 403, existe un respaldo **opcional** mediante ScrapingAnt, únicamente cuando configures su token en los secretos de GitHub; sin ese token no gasta ningún crédito.
-- El acceso directo usa pausas de **al menos 5 segundos entre solicitudes**. En una prueba desde GitHub, un servidor devolvió HTTP 403 incluso tras una espera inicial de 15 segundos y un segundo intento 20 segundos después. El bloqueo no se explica únicamente por la velocidad.
+- El acceso directo volvió a su velocidad original: sin pausa obligatoria entre consultas exitosas; solo conserva reintentos breves (4 y 12 segundos) si se recibe un error. En una prueba pausada, GitHub recibió HTTP 403 incluso antes de hacer consultas sucesivas, por lo que reducir la velocidad no resolvió ese bloqueo.
 - Guarda el historial en `estado_monitor_v7.json` después de cada ejecución.
 - Consulta todas las páginas **filtradas por tapa dura** de cada editorial hasta su final; conserva el filtro en páginas posteriores.
 - Exige **novela + tapa dura + precio actual < $200 MXN + precio observado de $400 MXN o más durante tres fechas distintas anteriores + ficha y stock verificables**.
