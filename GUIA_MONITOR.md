@@ -12,12 +12,13 @@ El 7 de noviembre de 2026, BuscaLibre mostraba aproximadamente 352 + 13 + 20 + 2
 
 - Ejecuta Python en los servidores **macOS estándar de GitHub Actions**; no necesita tu computadora encendida.
 - Primero usa acceso directo a BuscaLibre, **sin créditos**. Si GitHub recibe un bloqueo 403, existe un respaldo **opcional** mediante ScrapingAnt, únicamente cuando configures su token en los secretos de GitHub; sin ese token no gasta ningún crédito.
+- El acceso directo usa pausas de **al menos 5 segundos entre solicitudes**. En una prueba desde GitHub, un servidor devolvió HTTP 403 incluso tras una espera inicial de 15 segundos y un segundo intento 20 segundos después. El bloqueo no se explica únicamente por la velocidad.
 - Guarda el historial en `estado_monitor_v7.json` después de cada ejecución.
 - Consulta todas las páginas **filtradas por tapa dura** de cada editorial hasta su final; conserva el filtro en páginas posteriores.
 - Exige **novela + tapa dura + precio actual < $200 MXN + precio observado de $400 MXN o más durante tres fechas distintas anteriores + ficha y stock verificables**.
 - No se envían alertas cuando el género o el histórico no están confirmados.
 - Cuando falla la cobertura, la ejecución queda marcada como fallida y el historial de precios **no se actualiza** con datos parciales.
-- En caso de fallo, puede enviar un aviso de incidencia de Telegram, como máximo uno al día, una vez configurado.
+- **Telegram solo envía avisos de ofertas verificadas**. Los errores, bloqueos 403 y revisiones incompletas se registran en GitHub Actions y nunca generan mensajes de Telegram.
 
 ## Configurar Telegram (una sola vez)
 
