@@ -231,6 +231,7 @@ def extract_page(html,base,catalog,n):
     filter_ok=bool(checkbox and checkbox.has_attr('checked'))
     count=re.search(r'Encontramos\s+([\d.,]+)\s+Libros',soup.get_text(' ',strip=True),re.I)
     total=int(re.sub(r'[^\d]','',count.group(1))) if count else None
+    filter_inputs=[(x.get('value'),x.has_attr('checked')) for x in soup.select('input[name="ff"]')][:8]
     for i,c in enumerate(cards,1):
         title=txt(c.select_one('h3.nombre'))
         author=txt(c.select_one('.autor:not(.metas)'))
@@ -265,7 +266,7 @@ def extract_page(html,base,catalog,n):
         if u.path.rstrip('/')!=origin.path.rstrip('/'):continue
         links.update(int(p) for p in parse_qs(u.query).get('page',[]) if p.isdigit())
     return dict(rows=rows,issues=issues,notes=notes,cards=len(cards),pages=links,
-                title=txt(soup.title),filter_ok=filter_ok,total=total)
+                title=txt(soup.title),filter_ok=filter_ok,total=total,filter_inputs=filter_inputs)
 
 
 @dataclass
@@ -305,6 +306,9 @@ def one_page(s,trans):
         except FetchError:pass
     s.notes.extend(p['notes'])
     if not p['filter_ok']:
+        hardcover_count=sum(hardcover(r['edicion']) is True for r in p['rows'])
+        print(f'  Diagnóstico filtro {s.name}: total={p["total"]}; tarjetas={p["cards"]}; '
+              f'duras={hardcover_count}/{len(p["rows"])}; ff={p["filter_inputs"]}',flush=True)
         s.failed.append(n);s.finished=True
         s.issues.append(f'Página {n}: la tienda no confirmó el filtro TAPA DURA')
         return
