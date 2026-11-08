@@ -36,7 +36,7 @@ jobs:
       - name: Probar reglas de precios y géneros
         run: python monitor.py --self-test
 
-      - name: Revisar catálogos solo tapa dura (acceso directo y respaldo)
+      - name: Diagnosticar filtro tapa dura en BuscaLibre (acceso directo y respaldo)
         id: scan
         continue-on-error: true
         env:
