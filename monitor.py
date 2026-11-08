@@ -31,10 +31,10 @@ from bs4 import BeautifulSoup
 DIR = Path(__file__).resolve().parent
 API = 'https://api.scrapingant.com/v2/general'
 CATALOGS = [
-    ('Alba', 'https://www.buscalibre.com.mx/libros/editorial/alba'),
-    ('Alba Editorial', 'https://www.buscalibre.com.mx/libros/editorial/alba-editorial'),
-    ('Acantilado', 'https://www.buscalibre.com.mx/libros/editorial/acantilado'),
-    ('El Acantilado', 'https://www.buscalibre.com.mx/libros/editorial/el-acantilado'),
+    ('Alba', 'https://www.buscalibre.com.mx/libros/editorial/alba?ff=tapa+dura'),
+    ('Alba Editorial', 'https://www.buscalibre.com.mx/libros/editorial/alba-editorial?ff=tapa+dura'),
+    ('Acantilado', 'https://www.buscalibre.com.mx/libros/editorial/acantilado?ff=tapa+dura'),
+    ('El Acantilado', 'https://www.buscalibre.com.mx/libros/editorial/el-acantilado?ff=tapa+dura'),
 ]
 LIMIT = Decimal('200.00')  # estrictamente menor
 REFERENCE = Decimal('400.00')  # previamente observado, >=400
@@ -217,13 +217,20 @@ class Transport:
 def catalog_url(base,n):
     if n==1:return base
     u=urlparse(base)
-    return urlunparse((u.scheme,u.netloc,u.path,'',urlencode({'page':n}),''))
+    params=parse_qs(u.query)
+    params['page']=[str(n)]
+    return urlunparse((u.scheme,u.netloc,u.path,'',urlencode(params,doseq=True),''))
 
 
 def extract_page(html,base,catalog,n):
     soup=BeautifulSoup(html,'html.parser')
     cards=soup.select('.box-producto')
     rows=[];issues=[];notes=[]
+    # La página debe confirmar que el filtro de encuadernación está activo.
+    checkbox=soup.select_one('input[name="ff"][value="tapa dura"]')
+    filter_ok=bool(checkbox and checkbox.has_attr('checked'))
+    count=re.search(r'Encontramos\s+([\d.,]+)\s+Libros',soup.get_text(' ',strip=True),re.I)
+    total=int(re.sub(r'[^\d]','',count.group(1))) if count else None
     for i,c in enumerate(cards,1):
         title=txt(c.select_one('h3.nombre'))
         author=txt(c.select_one('.autor:not(.metas)'))
@@ -258,7 +265,7 @@ def extract_page(html,base,catalog,n):
         if u.path.rstrip('/')!=origin.path.rstrip('/'):continue
         links.update(int(p) for p in parse_qs(u.query).get('page',[]) if p.isdigit())
     return dict(rows=rows,issues=issues,notes=notes,cards=len(cards),pages=links,
-                title=txt(soup.title))
+                title=txt(soup.title),filter_ok=filter_ok,total=total)
 
 
 @dataclass
@@ -297,6 +304,10 @@ def one_page(s,trans):
             if len(again['issues'])<len(p['issues']):p=again
         except FetchError:pass
     s.notes.extend(p['notes'])
+    if not p['filter_ok']:
+        s.failed.append(n);s.finished=True
+        s.issues.append(f'Página {n}: la tienda no confirmó el filtro TAPA DURA')
+        return
     if p['cards']==0:
         if 'buscalibre' not in norm(p['title']):
             s.failed.append(n);s.issues.append(f'Página {n}: HTML sin fichas y título no reconocido, posible bloqueo ({p["title"][:60]})');s.finished=True;return
@@ -314,7 +325,13 @@ def one_page(s,trans):
         s.partial.append(n);s.issues.extend(p['issues'])
     else:s.full.append(n)
     s.last_count=p['cards'];s.last_urls=urls
-    if n+1 not in p['pages'] and p['cards']<50:
+    # El sitio enlaza una página vacía de Alba incluso tras los 352 libros.
+    # Cerrar cuando el total de fichas únicas coincida con su recuento visible.
+    unique=len({r['url'] for r in s.records})==len(s.records)
+    if not p['issues'] and p['total'] is not None and unique and len(s.records)==p['total']:
+        s.closed=True;s.finished=True
+        s.why=f'Catálogo filtrado completo: {p["total"]} libros únicos en {n} páginas'
+    elif n+1 not in p['pages'] and p['cards']<50:
         s.closed=True;s.finished=True;s.why=f'Página {n} con {p["cards"]} fichas sin enlace a {n+1}'
     else:s.page=n+1
 
@@ -561,10 +578,13 @@ def self_test():
     assert hardcover('Alba, 2023, Tapa Blanda, Nuevo') is False
     assert hardcover('Acantilado, 2022, Libro') is None
     assert is_novel('Novelas contemporáneas','')
+    assert catalog_url(CATALOGS[0][1],2).endswith('ff=tapa+dura&page=2')
+    assert all('ff=tapa+dura' in url for _,url in CATALOGS)
     assert not is_novel('Ensayos literarios','Esta novela')
-    demo='<div class="box-producto" data-id_producto="12"><a href="https://www.buscalibre.com.mx/libro-test/123/p/12"></a><h3 class="nombre">Prueba</h3><div class="autor metas">Alba, Tapa Dura, Nuevo</div><div class="box-precios"><del>$ 500.00</del><strong>$ 199.00</strong></div></div>'
+    demo='<input name="ff" value="tapa dura" checked="checked"><h2>Encontramos 1 Libros</h2><div class="box-producto" data-id_producto="12"><a href="https://www.buscalibre.com.mx/libro-test/123/p/12"></a><h3 class="nombre">Prueba</h3><div class="autor metas">Alba, Tapa Dura, Nuevo</div><div class="box-precios"><del>$ 500.00</del><strong>$ 199.00</strong></div></div>'
     e=extract_page(demo,CATALOGS[0][1],'Alba',1)
     assert len(e['rows'])==1 and e['rows'][0]['precio_mxn']=='199.00'
+    assert e['filter_ok'] and e['total']==1
     st={'history':{'book':{'days':{
         '2026-11-01':{'min':'420.00'},'2026-11-02':{'min':'430.00'},
         '2026-11-03':{'min':'450.00'},'2026-11-04':{'min':'130.00'}}}}}
