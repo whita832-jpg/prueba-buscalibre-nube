@@ -2,9 +2,6 @@ name: Probar aviso de Telegram
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/probar-telegram.yml'
 
 permissions:
   contents: read
