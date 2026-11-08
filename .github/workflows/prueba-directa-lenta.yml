@@ -1,0 +1,61 @@
+name: Prueba directa lenta sin notificaciones
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/prueba-directa-lenta.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  prueba:
+    runs-on: macos-latest
+    timeout-minutes: 8
+    steps:
+      - name: Obtener codigo
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias
+        run: python -m pip install -r requirements.txt
+      - name: Probar reglas locales
+        run: python monitor.py --self-test
+      - name: Comprobar HTTP con pausa inicial y entre catálogos
+        shell: bash
+        run: |
+          python - <<'PY'
+          import time,requests
+          from monitor import CATALOGS, USER_AGENT, extract_page
+          headers={
+              'User-Agent': USER_AGENT,
+              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+              'Accept-Language': 'es-MX,es;q=0.9',
+          }
+          print('Prueba sin ScrapingAnt ni Telegram: pausa inicial 15 segundos.',flush=True)
+          time.sleep(15)
+          for index,(name,url) in enumerate(CATALOGS):
+              try:
+                  r=requests.get(url,headers=headers,timeout=20)
+                  print(f'{name}: HTTP {r.status_code}, bytes {len(r.content)}',flush=True)
+                  if r.status_code==200:
+                      page=extract_page(r.text,url,name,1)
+                      print(f'  fichas={page["cards"]}, filtro={page["filter_ok"]}, total={page["total"]}',flush=True)
+                  else:
+                      print('  El primer error HTTP se produjo tras la pausa inicial, sin ráfaga previa.',flush=True)
+                      if index==0:
+                          print('  Esperar otros 20 s y repetir Alba una vez.',flush=True)
+                          time.sleep(20)
+                          again=requests.get(url,headers=headers,timeout=20)
+                          print(f'Alba segundo intento: HTTP {again.status_code}',flush=True)
+                      break
+              except requests.RequestException as error:
+                  print(f'Error de red: {type(error).__name__}',flush=True)
+                  break
+              if index<len(CATALOGS)-1:
+                  print('Pausa de 7 segundos antes del siguiente catálogo.',flush=True)
+                  time.sleep(7)
+          PY
