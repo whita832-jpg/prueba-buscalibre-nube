@@ -26,6 +26,11 @@ jobs:
         with:
           persist-credentials: true
 
+      - name: Actualizar rama e historial antes del escaneo
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
+
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
@@ -35,7 +40,9 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Probar reglas de precios y géneros
-        run: python monitor.py --self-test
+        run: |
+          python monitor.py --self-test
+          python fusionar_estado.py --self-test
 
       - name: Revisar tapa dura verificada en los cuatro catálogos
         id: scan
@@ -48,33 +55,39 @@ jobs:
 
       - name: Guardar historial y estado de cobertura en GitHub
         if: always()
+        shell: bash
         run: |
-          if [ -f estado_monitor_v7.json ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add estado_monitor_v7.json
-            if ! git diff --cached --quiet; then
-              git commit -m "Actualización automática de precios y cobertura [skip ci]"
-              # El repositorio puede haber avanzado durante el escaneo.
-              # Reconciliar cambios sin sobrescribir historial ni código.
-              for intento in 1 2 3; do
-                git fetch origin main
-                git rebase origin/main
-                if git push origin HEAD:main; then
-                  echo "Historial conservado en GitHub."
-                  break
-                fi
-                if [ "$intento" -eq 3 ]; then
-                  echo "::error::No se pudo persistir el historial."
-                  exit 1
-                fi
-                sleep 3
-              done
-            else
-              echo "El historial no ha cambiado."
-            fi
-          else
+          if [ ! -f estado_monitor_v7.json ]; then
             echo "::error::No se creó el archivo de estado."
+            exit 1
+          fi
+          cp estado_monitor_v7.json "$RUNNER_TEMP/estado-local.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          guardado=false
+          for intento in 1 2 3; do
+            # Nunca rebasar un commit que edita el mismo JSON: puede tener
+            # conflictos incluso con dos ejecuciones exitosas consecutivas.
+            git fetch origin main
+            git reset --hard origin/main
+            python fusionar_estado.py --incoming "$RUNNER_TEMP/estado-local.json" --target estado_monitor_v7.json
+            git add estado_monitor_v7.json
+            if git diff --cached --quiet; then
+              echo "El estado ya está guardado sin diferencias."
+              guardado=true
+              break
+            fi
+            git commit -m "Actualización automática de precios y cobertura [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Historial fusionado y conservado en GitHub."
+              guardado=true
+              break
+            fi
+            echo "::warning::El remoto avanzó durante el escaneo. Reintentando fusión."
+            sleep 3
+          done
+          if [ "$guardado" != "true" ]; then
+            echo "::error::No se pudo persistir el historial tras tres intentos."
             exit 1
           fi
 
