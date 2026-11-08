@@ -18,11 +18,14 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SCRAPINGANT_API_TOKEN: ${{ secrets.SCRAPINGANT_API_TOKEN }}
         run: |
           python3 - <<'PY'
           import os, json, urllib.request, urllib.parse, urllib.error
           token = os.environ.get('TELEGRAM_BOT_TOKEN','')
           dest = os.environ.get('TELEGRAM_CHAT_ID','')
+          scrapingant_present = bool(os.environ.get('SCRAPINGANT_API_TOKEN','').strip())
+          print('SCRAPINGANT_API_TOKEN:', 'DISPONIBLE' if scrapingant_present else 'NO DISPONIBLE', flush=True)
           if not token or not dest:
               if not token: print('FALTA: TELEGRAM_BOT_TOKEN (vacío o no disponible en este repositorio)')
               if not dest: print('FALTA: TELEGRAM_CHAT_ID (vacío o no disponible en este repositorio)')
