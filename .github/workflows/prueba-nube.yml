@@ -2,10 +2,6 @@ name: PRUEBA GRATUITA - BuscaLibre desde GitHub
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/prueba-nube.yml'
-      - 'monitor.py'
 
 permissions:
   contents: read
