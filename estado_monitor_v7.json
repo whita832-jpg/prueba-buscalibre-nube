@@ -21827,6 +21827,14 @@
      "max": "485.43"
     }
    }
+  },
+  "https://www.buscalibre.com.mx/libro-vida-de-samuel-johnson/9788496489844/p/2517902": {
+   "days": {
+    "2026-11-09": {
+     "min": "1784.25",
+     "max": "1784.25"
+    }
+   }
   }
  },
  "alerted": {},
@@ -21834,7 +21842,7 @@
   "github": "2026-11-09"
  },
  "last_scan": {
-  "utc": "2026-11-09T14:44:33+00:00",
+  "utc": "2026-11-09T16:17:52+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -21866,7 +21874,7 @@
     "closed": true
    }
   ],
-  "products": 385,
+  "products": 386,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07"
