@@ -51,7 +51,27 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPINGANT_API_TOKEN: ${{ secrets.SCRAPINGANT_API_TOKEN }}
-        run: python monitor.py --mode monitor --source auto --parallel 1
+        run: |
+          # BuscaLibre puede devolver fichas duplicadas entre páginas por un
+          # cambio temporal de su paginación. No dar por completa la cobertura:
+          # repetir la revisión entera antes de declarar fallo.
+          for intento in 1 2 3; do
+            echo "Revisión BuscaLibre: intento ${intento}/3"
+            if python monitor.py --mode monitor --source auto --parallel 1; then
+              echo "Cobertura completa verificada en el intento ${intento}."
+              exit 0
+            fi
+            echo "::warning::Revisión incompleta en intento ${intento}/3."
+            if [ "${intento}" -lt 3 ]; then
+              sleep 15
+            fi
+          done
+          if [ -f reporte_integral_v7.txt ]; then
+            echo "Diagnóstico de la última revisión:"
+            grep -E '^(EDITORIAL:|  Páginas fallidas:|  ERROR:)' reporte_integral_v7.txt || true
+          fi
+          echo "::error::Cobertura incompleta tras 3 intentos completos."
+          exit 1
 
       - name: Guardar historial y estado de cobertura en GitHub
         if: always()
