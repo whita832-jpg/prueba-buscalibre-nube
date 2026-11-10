@@ -321,6 +321,15 @@ def one_page(s,trans):
         if 'buscalibre' not in norm(p['title']):
             s.failed.append(n);s.issues.append(f'Página {n}: HTML sin fichas y título no reconocido, posible bloqueo ({p["title"][:60]})');s.finished=True;return
         s.terminals.append(n)
+        # Si la tienda repite libros en distintas páginas, una página terminal
+        # vacía no demuestra cobertura: podría faltar un título único.
+        all_urls=[r['url'] for r in s.records]
+        unique_count=len(set(all_urls))
+        if unique_count<len(all_urls):
+            s.failed.append(n)
+            s.issues.append(f'Página {n} vacía tras {len(all_urls)} fichas, pero solo '
+                            f'{unique_count} productos únicos (duplicados entre páginas)')
+            s.finished=True;return
         if n>1 and s.last_count<50:
             s.closed=True;s.why=f'Página terminal {n} vacía, después de página con {s.last_count} fichas'
         else:
