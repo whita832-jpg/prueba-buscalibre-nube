@@ -510,6 +510,91 @@ def write_csv(file,rows,columns):
         writer.writeheader();writer.writerows(rows)
 
 
+
+def recover_page_boundary_overlap(catalogs, trans, st):
+    """Rescatar fichas omitidas por solapamiento de páginas, sin suponer precios.
+    Solo una referencia verificada en el último catálogo completo puede suplir
+    un enlace duplicado, y se vuelve a consultar su ficha en el sitio actual.
+    """
+    snapshot=st.get('last_complete_catalog_urls') or {}
+    stamp=st.get('last_complete_catalog_utc','')
+    usable_snapshot=False
+    try:
+        age=datetime.now(timezone.utc)-datetime.fromisoformat(stamp.replace('Z','+00:00'))
+        usable_snapshot=timedelta(0)<=age<=timedelta(days=2)
+    except (ValueError,TypeError):
+        pass
+    # Compatibilidad con historiales previos que aún no tenían la instantánea.
+    baseline=set()
+    if not usable_snapshot:
+        days={day for entry in st.get('history',{}).values()
+              for day in entry.get('days',{})}
+        if days:
+            latest=max(days)
+            if latest >= (date.fromisoformat(today())-timedelta(days=2)).isoformat():
+                baseline={url for url,entry in st['history'].items()
+                          if latest in entry.get('days',{})}
+    current={r['url'] for c in catalogs for r in c.records}
+    for c in catalogs:
+        if c.closed or c.partial or len(c.failed)!=1 or not c.terminals:
+            continue
+        if c.failed[0]!=c.terminals[-1] or not all(x.closed for x in catalogs if x is not c):
+            continue
+        slots=len(c.records)
+        distinct=len({r['url'] for r in c.records})
+        missing_count=slots-distinct
+        if not 1<=missing_count<=3:
+            continue
+        if usable_snapshot:
+            known=set(snapshot.get(c.name,[]))
+            if len(known)!=slots:
+                continue
+            candidates=sorted(known-current)
+        else:
+            if len(baseline)!=sum(len(x.records) for x in catalogs):
+                continue
+            candidates=sorted(baseline-current)
+        if len(candidates)!=missing_count:
+            continue
+        rescued=[]
+        for url in candidates:
+            try:
+                info=detail_info(trans.fetch(url,'detail').html)
+            except FetchError as e:
+                c.notes.append(f'Rescate no verificable en ficha: {e.status}')
+                break
+            if (norm(info['publisher'])!=norm(c.name)
+                    or hardcover(info['binding']) is not True
+                    or info['price'] is None or not info['title']
+                    or not info['can_buy']
+                    or re.search(r'agotad|sin stock',norm(info['stock']))):
+                c.notes.append('Ficha de rescate no confirma editorial, tapa dura, precio o existencias')
+                break
+            rescued.append(dict(catalogo=c.name,pagina=c.terminals[-1],
+                titulo=info['title'],autor=info['author'],
+                edicion=f"{c.name}, {info['binding']}",formato_catalogo='DURA',
+                precio_mxn=f"{info['price']:.2f}",url=url,
+                candidato_menos_200='SI' if info['price']<LIMIT else 'NO'))
+        if len(rescued)!=missing_count:
+            continue
+        unique_rows={}
+        for r in c.records:
+            unique_rows.setdefault(r['url'],r)
+        for r in rescued:
+            unique_rows[r['url']]=r
+        if len(unique_rows)!=slots:
+            continue
+        c.records=list(unique_rows.values())
+        c.notes.extend(c.issues)
+        c.issues.clear()
+        c.failed.clear()
+        c.closed=True
+        c.why=(f'{slots} productos únicos; {missing_count} ficha(s) recuperada(s) '
+               'y verificada(s) en directo tras solapamiento de páginas')
+        print(f'[{c.name}] Corregido solapamiento: {missing_count} ficha(s) '
+              'revalidadas de la última cobertura completa.',flush=True)
+
+
 def scan(token,source,mode,parallel=1):
     started=time.monotonic();start_at=now()
     st=load_state();trans=Transport(token,source,st)
@@ -520,6 +605,7 @@ def scan(token,source,mode,parallel=1):
         while any(not x.finished for x in catalogs):
             pending=[c for c in catalogs if not c.finished]
             list(executor.map(lambda c: one_page(c,trans), pending))
+    recover_page_boundary_overlap(catalogs,trans,st)
     rows=[x for c in catalogs for x in c.records]
     full=all(c.closed and not c.partial and not c.failed for c in catalogs)
     # Nunca generar avisos de ofertas ni incorporar precios históricos de un
@@ -527,6 +613,9 @@ def scan(token,source,mode,parallel=1):
     if full:
         low,checked,offers=check_offers(trans,rows,st)
         update_history(st,rows)
+        st['last_complete_catalog_utc']=now()
+        st['last_complete_catalog_urls']={c.name:sorted({r['url'] for r in c.records})
+                                         for c in catalogs}
     else:
         low=[x for x in rows if x['candidato_menos_200']=='SI']
         checked=[]
