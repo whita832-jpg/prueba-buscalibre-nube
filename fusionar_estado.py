@@ -74,6 +74,13 @@ def merge(remote: dict, incoming: dict) -> dict:
     if incoming.get('last_scan'):
         if not result.get('last_scan') or incoming['last_scan'].get('utc', '') >= result['last_scan'].get('utc', ''):
             result['last_scan'] = copy.deepcopy(incoming['last_scan'])
+    # La última instantánea COMPLETA se conserva aunque llegue una revisión
+    # parcial o dos ejecuciones actualicen main casi al mismo tiempo.
+    snapshot_at=incoming.get('last_complete_catalog_utc','')
+    if (snapshot_at and incoming.get('last_complete_catalog_urls')
+            and snapshot_at>=result.get('last_complete_catalog_utc','')):
+        result['last_complete_catalog_utc']=snapshot_at
+        result['last_complete_catalog_urls']=copy.deepcopy(incoming['last_complete_catalog_urls'])
     return result
 
 def self_test():
