@@ -24922,15 +24922,17 @@
   "github": "2026-11-11"
  },
  "last_scan": {
-  "utc": "2026-11-11T13:34:48+00:00",
-  "complete": true,
+  "utc": "2026-11-11T14:38:11+00:00",
+  "complete": false,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     8
+    ],
+    "closed": false
    },
    {
     "name": "Alba Editorial",
@@ -24954,7 +24956,7 @@
     "closed": true
    }
   ],
-  "products": 383,
+  "products": 385,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
