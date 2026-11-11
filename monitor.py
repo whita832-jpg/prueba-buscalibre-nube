@@ -321,19 +321,27 @@ def one_page(s,trans):
         if 'buscalibre' not in norm(p['title']):
             s.failed.append(n);s.issues.append(f'Página {n}: HTML sin fichas y título no reconocido, posible bloqueo ({p["title"][:60]})');s.finished=True;return
         s.terminals.append(n)
-        # Si la tienda repite libros en distintas páginas, una página terminal
-        # vacía no demuestra cobertura: podría faltar un título único.
+        # Un solapamiento pequeño entre páginas es habitual cuando cambia el
+        # orden de BuscaLibre durante el escaneo. No confundir fichas repetidas
+        # con un bloqueo, pero registrar la incertidumbre sobre libros únicos.
         all_urls=[r['url'] for r in s.records]
         unique_count=len(set(all_urls))
-        if unique_count<len(all_urls):
-            s.failed.append(n)
-            s.issues.append(f'Página {n} vacía tras {len(all_urls)} fichas, pero solo '
-                            f'{unique_count} productos únicos (duplicados entre páginas)')
-            s.finished=True;return
-        if n>1 and s.last_count<50:
-            s.closed=True;s.why=f'Página terminal {n} vacía, después de página con {s.last_count} fichas'
+        duplicates=len(all_urls)-unique_count
+        if duplicates:
+            s.notes.append(f'Página terminal {n}: {duplicates} fichas repetidas entre páginas; '
+                           f'{unique_count} productos únicos. Posible variación del catálogo.')
+        # El cierre requiere una página final corta y una página terminal real.
+        # Un solapamiento de más de una ficha o superior al 1 % continúa siendo
+        # una anomalía que exige revisión, para no ocultar pérdida de cobertura.
+        minor_overlap=duplicates<=1 and duplicates<=max(1,len(all_urls)//100)
+        if n>1 and s.last_count<50 and minor_overlap:
+            s.closed=True
+            s.why=(f'Página terminal {n} vacía, después de página con {s.last_count} fichas; '
+                   f'{unique_count} títulos únicos y {duplicates} fichas repetidas')
         else:
-            s.failed.append(n);s.issues.append(f'Página {n} vacía, fin no demostrado ({p["title"][:60]})')
+            s.failed.append(n)
+            s.issues.append(f'Página {n} vacía: cierre no demostrado; '
+                            f'{duplicates} fichas repetidas y última página con {s.last_count} fichas')
         s.finished=True;return
     urls={r['url'] for r in p['rows']}
     if n>1 and urls and urls==s.last_urls:
