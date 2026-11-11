@@ -24922,7 +24922,7 @@
   "github": "2026-11-11"
  },
  "last_scan": {
-  "utc": "2026-11-11T09:31:42+00:00",
+  "utc": "2026-11-11T10:40:01+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -24954,11 +24954,11 @@
     "closed": true
    }
   ],
-  "products": 384,
+  "products": 383,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-11T09:31:42+00:00",
+ "last_complete_catalog_utc": "2026-11-11T10:40:01+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -25337,7 +25337,6 @@
    "https://www.buscalibre.com.mx/libro-la-carne-la-muerte-y-el-diablo-en-la-literatura-romantica/9788493065751/p/1027776",
    "https://www.buscalibre.com.mx/libro-las-confesiones-de-un-italiano/9788496834804/p/2393644",
    "https://www.buscalibre.com.mx/libro-los-demonios-segun-la-cronica-del-jefe-de-estacion-geyrenhoff/9788496834705/p/2911448",
-   "https://www.buscalibre.com.mx/libro-los-ensayos/9788496834170/p/2517890",
    "https://www.buscalibre.com.mx/libro-los-relatos-del-padre-brown/9788496834897/p/2393651",
    "https://www.buscalibre.com.mx/libro-manuscrito-encontrado-en-zaragoza/9788492649266/p/3023626",
    "https://www.buscalibre.com.mx/libro-memorias-de-ultratumba-estuche-2-vols/9788496136878/p/14871140",
