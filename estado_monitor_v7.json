@@ -10161,6 +10161,10 @@
     "2026-11-11": {
      "min": "615.38",
      "max": "615.38"
+    },
+    "2026-11-12": {
+     "min": "604.12",
+     "max": "604.12"
     }
    }
   },
@@ -14931,7 +14935,7 @@
      "max": "675.96"
     },
     "2026-11-12": {
-     "min": "641.84",
+     "min": "640.84",
      "max": "641.84"
     }
    }
@@ -17629,6 +17633,10 @@
     "2026-11-09": {
      "min": "637.90",
      "max": "637.90"
+    },
+    "2026-11-12": {
+     "min": "792.93",
+     "max": "792.93"
     }
    }
   },
@@ -26462,7 +26470,7 @@
   "github": "2026-11-12"
  },
  "last_scan": {
-  "utc": "2026-11-12T11:40:13+00:00",
+  "utc": "2026-11-12T12:37:46+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -26498,7 +26506,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-12T11:40:13+00:00",
+ "last_complete_catalog_utc": "2026-11-12T12:37:46+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -26731,6 +26739,7 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-teresa-de-calcuta/9788490654651/p/50591660",
    "https://www.buscalibre.com.mx/libro-pequena-grande-vivienne-westwood/9788490656105/p/51998546",
    "https://www.buscalibre.com.mx/libro-pequena-y-grande-frida-kahlo/9788490650813/p/46458130",
+   "https://www.buscalibre.com.mx/libro-pequeno-grande-alan-turing/9788490657430/p/53194888",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-bob-dylan/9788490656525/p/52489332",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-bruce-lee/9788490655979/p/52140437",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-david-attenborough/9788490656846/p/52972608",
@@ -26853,6 +26862,7 @@
   "Alba Editorial": [
    "https://www.buscalibre.com.mx/libro-agenda-literaria-2027-literatura-y-cine/9788411782890/p/68895139",
    "https://www.buscalibre.com.mx/libro-bajo-la-luna-del-olivo-diez-fabulas-palestinas-contadas-por-una-madre-en-gaza/9788411783088/p/68882641",
+   "https://www.buscalibre.com.mx/libro-el-jugador/9788411782784/p/68338693",
    "https://www.buscalibre.com.mx/libro-el-retrato-de-dorian-gray/9788411782845/p/68882645",
    "https://www.buscalibre.com.mx/libro-estrofas-rotas-poesia-reunida/9788411782968/p/69329340",
    "https://www.buscalibre.com.mx/libro-la-nostra-llar-ens-abraca/9788411783071/p/68882644",
@@ -26876,7 +26886,6 @@
    "https://www.buscalibre.com.mx/libro-la-carne-la-muerte-y-el-diablo-en-la-literatura-romantica/9788493065751/p/1027776",
    "https://www.buscalibre.com.mx/libro-las-confesiones-de-un-italiano/9788496834804/p/2393644",
    "https://www.buscalibre.com.mx/libro-los-demonios-segun-la-cronica-del-jefe-de-estacion-geyrenhoff/9788496834705/p/2911448",
-   "https://www.buscalibre.com.mx/libro-los-ensayos/9788496834170/p/2517890",
    "https://www.buscalibre.com.mx/libro-los-relatos-del-padre-brown/9788496834897/p/2393651",
    "https://www.buscalibre.com.mx/libro-manuscrito-encontrado-en-zaragoza/9788492649266/p/3023626",
    "https://www.buscalibre.com.mx/libro-memorias-de-ultratumba-estuche-2-vols/9788496136878/p/14871140",
