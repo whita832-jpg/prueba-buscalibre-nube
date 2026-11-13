@@ -2436,7 +2436,7 @@
     },
     "2026-11-13": {
      "min": "619.33",
-     "max": "619.33"
+     "max": "677.51"
     }
    }
   },
@@ -28002,7 +28002,7 @@
   "github": "2026-11-13"
  },
  "last_scan": {
-  "utc": "2026-11-13T12:32:26+00:00",
+  "utc": "2026-11-13T13:39:36+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -28034,11 +28034,11 @@
     "closed": true
    }
   ],
-  "products": 383,
+  "products": 382,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-13T12:32:26+00:00",
+ "last_complete_catalog_utc": "2026-11-13T13:39:36+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -28214,7 +28214,6 @@
    "https://www.buscalibre.com.mx/libro-mary-barton/9788484287162/p/6990563",
    "https://www.buscalibre.com.mx/libro-maternidad-y-creacion/9788490656785/p/53080363",
    "https://www.buscalibre.com.mx/libro-mejor-cocina-rapida-ofertas-altorrey/9788489592247/p/54636749",
-   "https://www.buscalibre.com.mx/libro-memorias-de-la-casa-muerta/9788484280767/p/1021962",
    "https://www.buscalibre.com.mx/libro-memorias-del-subsuelo/9788490659519/p/54483444",
    "https://www.buscalibre.com.mx/libro-mi-pequeno-gran-diario/9788490656938/p/52787537",
    "https://www.buscalibre.com.mx/libro-middlemarch/9788484280194/p/3313878",
