@@ -964,7 +964,7 @@
     },
     "2026-11-13": {
      "min": "737.77",
-     "max": "737.77"
+     "max": "748.51"
     }
    }
   },
@@ -10917,6 +10917,10 @@
     "2026-11-12": {
      "min": "521.49",
      "max": "625.79"
+    },
+    "2026-11-13": {
+     "min": "521.49",
+     "max": "521.49"
     }
    }
   },
@@ -27998,17 +28002,15 @@
   "github": "2026-11-13"
  },
  "last_scan": {
-  "utc": "2026-11-13T11:34:16+00:00",
-  "complete": false,
+  "utc": "2026-11-13T12:04:28+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -28036,7 +28038,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-13T10:39:42+00:00",
+ "last_complete_catalog_utc": "2026-11-13T12:04:28+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -28339,6 +28341,7 @@
    "https://www.buscalibre.com.mx/libro-petita-gran-rosa-parks-28/9788490655696/p/51622326",
    "https://www.buscalibre.com.mx/libro-petita-gran-rosalind-franklin/9788490658598/p/54044928",
    "https://www.buscalibre.com.mx/libro-petita-gran-simone-de-beauvoir-catalan/9788490654859/p/50657615",
+   "https://www.buscalibre.com.mx/libro-petita-gran-taylor-swift/9788411781596/p/64060226",
    "https://www.buscalibre.com.mx/libro-petita-gran-vivienne-westwood/9788490656112/p/51998545",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-coco-chanel/9788490650400/p/46407238",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-lucy-maud-montgomery-petita-gran/9788490655283/p/51442081",
