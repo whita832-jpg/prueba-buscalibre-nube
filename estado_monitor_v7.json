@@ -27995,6 +27995,22 @@
      "max": "1074.16"
     }
    }
+  },
+  "https://www.buscalibre.com.mx/libro-la-senora-bovary/9788484287582/p/11012427": {
+   "days": {
+    "2026-11-13": {
+     "min": "790.03",
+     "max": "790.03"
+    }
+   }
+  },
+  "https://www.buscalibre.com.mx/libro-en-busca-del-tiempo-perdido-iv-albertine-desaparecida-el-tiempo-recuperado/9788411782920/p/69399790": {
+   "days": {
+    "2026-11-13": {
+     "min": "930.70",
+     "max": "930.70"
+    }
+   }
   }
  },
  "alerted": {},
@@ -28002,7 +28018,7 @@
   "github": "2026-11-13"
  },
  "last_scan": {
-  "utc": "2026-11-13T13:39:36+00:00",
+  "utc": "2026-11-13T14:45:07+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -28034,11 +28050,11 @@
     "closed": true
    }
   ],
-  "products": 382,
+  "products": 384,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-13T13:39:36+00:00",
+ "last_complete_catalog_utc": "2026-11-13T14:45:07+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -28191,6 +28207,7 @@
    "https://www.buscalibre.com.mx/libro-la-piedra-lunar/9788484285977/p/4082546",
    "https://www.buscalibre.com.mx/libro-la-princesa-de-las-remolachas-y-otros-cuentos-populares-ineditos/9788490653791/p/49690864",
    "https://www.buscalibre.com.mx/libro-la-regenta/9788490658406/p/53984378",
+   "https://www.buscalibre.com.mx/libro-la-senora-bovary/9788484287582/p/11012427",
    "https://www.buscalibre.com.mx/libro-la-tortuga-de-l-avi-genis/9788411781053/p/62227376",
    "https://www.buscalibre.com.mx/libro-la-tortuga-del-abuelo-gines/9788411781046/p/62235045",
    "https://www.buscalibre.com.mx/libro-lady-ludlow/9788411781831/p/64601889",
@@ -28381,7 +28398,6 @@
    "https://www.buscalibre.com.mx/libro-un-heroe-de-nuestro-tiempo/9788490650387/p/46302981",
    "https://www.buscalibre.com.mx/libro-un-monstre/9788484289746/p/38285946",
    "https://www.buscalibre.com.mx/libro-un-monstruo/9788484289678/p/38285945",
-   "https://www.buscalibre.com.mx/libro-veronica/9788490654682/p/50591666",
    "https://www.buscalibre.com.mx/libro-veronica/9788490654699/p/50647956",
    "https://www.buscalibre.com.mx/libro-viaje-a-traves-de-la-moda/9788490658215/p/53697779",
    "https://www.buscalibre.com.mx/libro-viajeros/9788490656815/p/52901813",
@@ -28394,6 +28410,7 @@
    "https://www.buscalibre.com.mx/libro-agenda-literaria-2027-literatura-y-cine/9788411782890/p/68895139",
    "https://www.buscalibre.com.mx/libro-bajo-la-luna-del-olivo-diez-fabulas-palestinas-contadas-por-una-madre-en-gaza/9788411783088/p/68882641",
    "https://www.buscalibre.com.mx/libro-el-retrato-de-dorian-gray/9788411782845/p/68882645",
+   "https://www.buscalibre.com.mx/libro-en-busca-del-tiempo-perdido-iv-albertine-desaparecida-el-tiempo-recuperado/9788411782920/p/69399790",
    "https://www.buscalibre.com.mx/libro-estrofas-rotas-poesia-reunida/9788411782968/p/69329340",
    "https://www.buscalibre.com.mx/libro-la-nostra-llar-ens-abraca/9788411783071/p/68882644",
    "https://www.buscalibre.com.mx/libro-la-tortilla-arcoiris/9788411781916/p/68634649",
