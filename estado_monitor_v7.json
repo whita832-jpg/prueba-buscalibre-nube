@@ -28018,15 +28018,17 @@
   "github": "2026-11-13"
  },
  "last_scan": {
-  "utc": "2026-11-13T16:41:34+00:00",
-  "complete": true,
+  "utc": "2026-11-13T17:37:33+00:00",
+  "complete": false,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     8
+    ],
+    "closed": false
    },
    {
     "name": "Alba Editorial",
@@ -28050,7 +28052,7 @@
     "closed": true
    }
   ],
-  "products": 384,
+  "products": 385,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
