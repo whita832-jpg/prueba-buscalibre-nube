@@ -29403,7 +29403,7 @@
      "max": "544.43"
     },
     "2026-11-14": {
-     "min": "544.43",
+     "min": "538.49",
      "max": "544.43"
     }
    }
@@ -29558,7 +29558,7 @@
   "github": "2026-11-14"
  },
  "last_scan": {
-  "utc": "2026-11-14T19:34:12+00:00",
+  "utc": "2026-11-14T20:41:11+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -29590,11 +29590,11 @@
     "closed": true
    }
   ],
-  "products": 385,
+  "products": 384,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-14T19:34:12+00:00",
+ "last_complete_catalog_utc": "2026-11-14T20:41:11+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -29747,7 +29747,6 @@
    "https://www.buscalibre.com.mx/libro-la-piedra-lunar/9788484285977/p/4082546",
    "https://www.buscalibre.com.mx/libro-la-princesa-de-las-remolachas-y-otros-cuentos-populares-ineditos/9788490653791/p/49690864",
    "https://www.buscalibre.com.mx/libro-la-regenta/9788490658406/p/53984378",
-   "https://www.buscalibre.com.mx/libro-la-senora-bovary/9788484287582/p/11012427",
    "https://www.buscalibre.com.mx/libro-la-tortuga-de-l-avi-genis/9788411781053/p/62227376",
    "https://www.buscalibre.com.mx/libro-la-tortuga-del-abuelo-gines/9788411781046/p/62235045",
    "https://www.buscalibre.com.mx/libro-lady-ludlow/9788411781831/p/64601889",
