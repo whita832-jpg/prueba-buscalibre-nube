@@ -28015,18 +28015,20 @@
  },
  "alerted": {},
  "direct_status": {
-  "github": "2026-11-13"
+  "github": "2026-11-14"
  },
  "last_scan": {
-  "utc": "2026-11-14T05:34:46+00:00",
-  "complete": true,
+  "utc": "2026-11-14T06:37:55+00:00",
+  "complete": false,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     8
+    ],
+    "closed": false
    },
    {
     "name": "Alba Editorial",
