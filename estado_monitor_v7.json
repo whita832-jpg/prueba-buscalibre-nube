@@ -31094,7 +31094,7 @@
   "github": "2026-11-15"
  },
  "last_scan": {
-  "utc": "2026-11-15T21:33:34+00:00",
+  "utc": "2026-11-15T22:36:41+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -31126,11 +31126,11 @@
     "closed": true
    }
   ],
-  "products": 384,
+  "products": 383,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-15T21:33:34+00:00",
+ "last_complete_catalog_utc": "2026-11-15T22:36:41+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -31216,6 +31216,7 @@
    "https://www.buscalibre.com.mx/libro-el-origen-de-las-especies-tapa-dura/9788495921673/p/54473220",
    "https://www.buscalibre.com.mx/libro-el-pequeno-circo-de-asno-y-camello/9788490651759/p/47256219",
    "https://www.buscalibre.com.mx/libro-el-pequeno-dombey-y-otras-adaptaciones-de-novelas-para-leer-en-publico/9788490656952/p/52803145",
+   "https://www.buscalibre.com.mx/libro-el-profeta/9788492143108/p/50596232",
    "https://www.buscalibre.com.mx/libro-el-puente-de-alexander/9788490655252/p/51433944",
    "https://www.buscalibre.com.mx/libro-el-quadre-infantil-ilustrado/9788490653470/p/48975636",
    "https://www.buscalibre.com.mx/libro-el-vent-de-marc/9788490653982/p/49893166",
@@ -31248,7 +31249,6 @@
    "https://www.buscalibre.com.mx/libro-guerra-y-paz-vol-i-y-ii-con-estuche/9788490657348/p/53172484",
    "https://www.buscalibre.com.mx/libro-guerra-y-paz-vol-ii/9788490657546/p/67081137",
    "https://www.buscalibre.com.mx/libro-historia-de-la-decadencia-y-caida-del-imperio-romano/9788484280538/p/3079074",
-   "https://www.buscalibre.com.mx/libro-humillados-y-ofendidos/9788484286158/p/4270618",
    "https://www.buscalibre.com.mx/libro-ia-podran-las-maquinas-reemplazarnos/9788490659885/p/55691522",
    "https://www.buscalibre.com.mx/libro-ia-podran-substituir-nos-les-maquines/9788411780148/p/55691523",
    "https://www.buscalibre.com.mx/libro-jane-eyre/9788489846869/p/1021949",
