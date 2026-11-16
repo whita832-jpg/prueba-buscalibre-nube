@@ -320,7 +320,7 @@
     },
     "2026-11-16": {
      "min": "572.00",
-     "max": "572.00"
+     "max": "788.36"
     }
    }
   },
@@ -864,7 +864,7 @@
     },
     "2026-11-16": {
      "min": "800.05",
-     "max": "800.05"
+     "max": "952.19"
     }
    }
   },
@@ -32587,7 +32587,7 @@
      "max": "1074.16"
     },
     "2026-11-16": {
-     "min": "1074.16",
+     "min": "699.49",
      "max": "1074.16"
     }
    }
@@ -32630,7 +32630,7 @@
   "github": "2026-11-16"
  },
  "last_scan": {
-  "utc": "2026-11-16T11:44:15+00:00",
+  "utc": "2026-11-16T13:35:52+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -32666,7 +32666,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-16T11:44:15+00:00",
+ "last_complete_catalog_utc": "2026-11-16T13:35:52+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -32927,7 +32927,6 @@
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-por-la-tolerancia/9788490652374/p/47808054",
    "https://www.buscalibre.com.mx/libro-petit-gran-alan-turing/9788490657447/p/53195930",
    "https://www.buscalibre.com.mx/libro-petit-gran-bob-dylan/9788490656532/p/52458800",
-   "https://www.buscalibre.com.mx/libro-petit-gran-bruce-lee/9788490655986/p/52140332",
    "https://www.buscalibre.com.mx/libro-petit-gran-charles-dickens/9788490659274/p/54398594",
    "https://www.buscalibre.com.mx/libro-petit-gran-david-attenborough/9788490656853/p/52978919",
    "https://www.buscalibre.com.mx/libro-petit-gran-david-bowie/9788490655146/p/51123320",
