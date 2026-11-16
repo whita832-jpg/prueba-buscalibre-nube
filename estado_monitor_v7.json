@@ -10045,6 +10045,10 @@
     "2026-11-15": {
      "min": "461.60",
      "max": "461.60"
+    },
+    "2026-11-16": {
+     "min": "461.60",
+     "max": "461.60"
     }
    }
   },
@@ -32623,10 +32627,10 @@
  },
  "alerted": {},
  "direct_status": {
-  "github": "2026-11-15"
+  "github": "2026-11-16"
  },
  "last_scan": {
-  "utc": "2026-11-16T06:33:37+00:00",
+  "utc": "2026-11-16T07:50:31+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -32662,7 +32666,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-16T06:33:37+00:00",
+ "last_complete_catalog_utc": "2026-11-16T07:50:31+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -32748,6 +32752,7 @@
    "https://www.buscalibre.com.mx/libro-el-origen-de-las-especies-tapa-dura/9788495921673/p/54473220",
    "https://www.buscalibre.com.mx/libro-el-pequeno-circo-de-asno-y-camello/9788490651759/p/47256219",
    "https://www.buscalibre.com.mx/libro-el-pequeno-dombey-y-otras-adaptaciones-de-novelas-para-leer-en-publico/9788490656952/p/52803145",
+   "https://www.buscalibre.com.mx/libro-el-profeta/9788492143108/p/50596232",
    "https://www.buscalibre.com.mx/libro-el-puente-de-alexander/9788490655252/p/51433944",
    "https://www.buscalibre.com.mx/libro-el-quadre-infantil-ilustrado/9788490653470/p/48975636",
    "https://www.buscalibre.com.mx/libro-el-vent-de-marc/9788490653982/p/49893166",
