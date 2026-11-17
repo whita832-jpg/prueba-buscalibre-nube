@@ -548,7 +548,7 @@
     },
     "2026-11-16": {
      "min": "580.00",
-     "max": "580.00"
+     "max": "725.00"
     }
    }
   },
@@ -592,7 +592,7 @@
     },
     "2026-11-16": {
      "min": "880.00",
-     "max": "880.00"
+     "max": "1100.00"
     }
    }
   },
@@ -724,7 +724,7 @@
     },
     "2026-11-16": {
      "min": "412.00",
-     "max": "412.00"
+     "max": "515.00"
     }
    }
   },
@@ -768,7 +768,7 @@
     },
     "2026-11-16": {
      "min": "580.00",
-     "max": "580.00"
+     "max": "725.00"
     }
    }
   },
@@ -908,7 +908,7 @@
     },
     "2026-11-16": {
      "min": "572.00",
-     "max": "572.00"
+     "max": "715.00"
     }
    }
   },
@@ -960,7 +960,7 @@
     },
     "2026-11-16": {
      "min": "280.00",
-     "max": "280.00"
+     "max": "350.00"
     }
    }
   },
@@ -1092,7 +1092,7 @@
     },
     "2026-11-16": {
      "min": "880.00",
-     "max": "880.00"
+     "max": "1100.00"
     }
    }
   },
@@ -1212,7 +1212,7 @@
     },
     "2026-11-16": {
      "min": "608.00",
-     "max": "608.00"
+     "max": "760.00"
     }
    }
   },
@@ -1524,7 +1524,7 @@
     },
     "2026-11-16": {
      "min": "960.00",
-     "max": "960.00"
+     "max": "1200.00"
     }
    }
   },
@@ -1688,7 +1688,7 @@
     },
     "2026-11-16": {
      "min": "540.00",
-     "max": "540.00"
+     "max": "675.00"
     }
    }
   },
@@ -1864,7 +1864,7 @@
     },
     "2026-11-16": {
      "min": "360.00",
-     "max": "360.00"
+     "max": "450.00"
     }
    }
   },
@@ -1976,7 +1976,7 @@
     },
     "2026-11-16": {
      "min": "412.00",
-     "max": "412.00"
+     "max": "515.00"
     }
    }
   },
@@ -2628,7 +2628,7 @@
     },
     "2026-11-16": {
      "min": "580.00",
-     "max": "580.00"
+     "max": "725.00"
     }
    }
   },
@@ -2688,7 +2688,7 @@
     },
     "2026-11-16": {
      "min": "436.00",
-     "max": "436.00"
+     "max": "545.00"
     }
    }
   },
@@ -2980,7 +2980,7 @@
     },
     "2026-11-16": {
      "min": "1240.00",
-     "max": "1240.00"
+     "max": "1550.00"
     }
    }
   },
@@ -3492,7 +3492,7 @@
     },
     "2026-11-16": {
      "min": "348.00",
-     "max": "348.00"
+     "max": "435.00"
     }
    }
   },
@@ -7428,7 +7428,7 @@
     },
     "2026-11-16": {
      "min": "348.00",
-     "max": "348.00"
+     "max": "435.00"
     }
    }
   },
@@ -8396,7 +8396,7 @@
     },
     "2026-11-16": {
      "min": "344.00",
-     "max": "344.00"
+     "max": "430.00"
     }
    }
   },
@@ -8816,7 +8816,7 @@
     },
     "2026-11-16": {
      "min": "372.00",
-     "max": "372.00"
+     "max": "465.00"
     }
    }
   },
@@ -10644,7 +10644,7 @@
     },
     "2026-11-16": {
      "min": "332.00",
-     "max": "332.00"
+     "max": "415.00"
     }
    }
   },
@@ -11148,7 +11148,7 @@
     },
     "2026-11-16": {
      "min": "308.00",
-     "max": "308.00"
+     "max": "385.00"
     }
    }
   },
@@ -12516,7 +12516,7 @@
     },
     "2026-11-16": {
      "min": "372.00",
-     "max": "372.00"
+     "max": "465.00"
     }
    }
   },
@@ -14000,7 +14000,7 @@
     },
     "2026-11-16": {
      "min": "344.00",
-     "max": "344.00"
+     "max": "430.00"
     }
    }
   },
@@ -19132,7 +19132,7 @@
     },
     "2026-11-16": {
      "min": "348.00",
-     "max": "348.00"
+     "max": "435.00"
     }
    }
   },
@@ -19436,7 +19436,7 @@
     },
     "2026-11-16": {
      "min": "344.00",
-     "max": "344.00"
+     "max": "430.00"
     }
    }
   },
@@ -20760,7 +20760,7 @@
     },
     "2026-11-16": {
      "min": "292.00",
-     "max": "292.00"
+     "max": "365.00"
     }
    }
   },
@@ -22272,7 +22272,7 @@
     },
     "2026-11-16": {
      "min": "308.00",
-     "max": "308.00"
+     "max": "385.00"
     }
    }
   },
@@ -28783,7 +28783,7 @@
      "max": "834.87"
     },
     "2026-11-16": {
-     "min": "834.87",
+     "min": "830.42",
      "max": "834.87"
     }
    }
@@ -32634,17 +32634,15 @@
   "github": "2026-11-16"
  },
  "last_scan": {
-  "utc": "2026-11-17T02:36:53+00:00",
-  "complete": false,
+  "utc": "2026-11-17T03:08:32+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -32672,7 +32670,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-17T01:39:21+00:00",
+ "last_complete_catalog_utc": "2026-11-17T03:08:32+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -32883,7 +32881,6 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-audrey-hepburn/9788490651117/p/46551352",
    "https://www.buscalibre.com.mx/libro-pequena-grande-carmen-amaya/9788490654972/p/50752852",
    "https://www.buscalibre.com.mx/libro-pequena-grande-dian-fossey/9788490653012/p/48169135",
-   "https://www.buscalibre.com.mx/libro-pequena-grande-ella-fitzgerald/9788490652749/p/48005642",
    "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514",
    "https://www.buscalibre.com.mx/libro-pequena-grande-gloria-fuertes/9788490653487/p/48975637",
    "https://www.buscalibre.com.mx/libro-pequena-grande-hannah-arendt/9788490657355/p/53150354",
@@ -32918,6 +32915,7 @@
    "https://www.buscalibre.com.mx/libro-pequeno-grande-martin-luther-king/9788490656396/p/52325647",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-muhammad-ali/9788490654804/p/50752858",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-pablo-picasso-44-pequena-grande/9788490658543/p/53951314",
+   "https://www.buscalibre.com.mx/libro-pequeno-grande-pele/9788490659922/p/54633605",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-rafa-nadal/9788411780247/p/55728392",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-rudolf-nureiev-27/9788490655702/p/51622323",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-salvador-dali/9788411780735/p/57031303",
