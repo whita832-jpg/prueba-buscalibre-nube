@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Monitoreo de cuatro catálogos de BuscaLibre MX, con filtro estricto:
-novela + tapa dura + actual < 200 MXN + referencia histórica observada >= 400.
+novela + tapa dura + actual < 200 MXN; se destacan las referencias históricas superiores a 400.
 No realiza compras. No guarda credenciales. Solo usa solicitudes GET.
 """
 from __future__ import annotations
@@ -37,7 +37,7 @@ CATALOGS = [
     ('El Acantilado', 'https://www.buscalibre.com.mx/libros/editorial/el-acantilado?ff=tapa+dura'),
 ]
 LIMIT = Decimal('200.00')  # estrictamente menor
-REFERENCE = Decimal('400.00')  # previamente observado, >=400
+REFERENCE = Decimal('400.00')  # umbral para destacar ofertas por su histórico
 MIN_REFERENCE_DAYS = 3
 HISTORY_DAYS = 180
 MAX_PAGES = 1000
@@ -436,8 +436,8 @@ def historical_reference(st,link):
     for day,price_range in ent.get('days',{}).items():
         if day>=today():continue
         v=decimal_or_none(price_range.get('min'))
-        # Día entero observado >=400 (mínimo diario), no un solo pico puntual.
-        if v is not None and v>=REFERENCE:high.append(v)
+        # Día entero observado >400 (mínimo diario), no un solo pico puntual.
+        if v is not None and v>REFERENCE:high.append(v)
     if len(high)<MIN_REFERENCE_DAYS:return None,len(high)
     return Decimal(str(statistics.median(high))),len(high)
 
@@ -450,8 +450,6 @@ def check_offers(trans,records,st):
         if f is False:
             checked.append({**row,'resultado':'DESCARTADO: no es tapa dura'});continue
         reference,days=historical_reference(st,row['url'])
-        if reference is None:
-            checked.append({**row,'resultado':f'PENDIENTE: referencia >=$400 acreditada en {days}/{MIN_REFERENCE_DAYS} días anteriores'});continue
         before=st['alerted'].get(row['url'],{})
         if before.get('price')==row['precio_mxn']:
             checked.append({**row,'resultado':'ALERTA ANTERIOR SIN CAMBIOS'});continue
@@ -475,12 +473,13 @@ def check_offers(trans,records,st):
         if reason:
             checked.append({**row,'resultado':reason,'categoria':info['category'],'encuadernacion_ficha':info['binding']});continue
         offer={**row,'precio_mxn':f'{info["price"]:.2f}',
-               'autor':row['autor'] or info['author'], 'precio_referencia':f'{reference:.2f}',
+               'autor':row['autor'] or info['author'], 'precio_referencia':f'{reference:.2f}' if reference is not None else '',
                'dias_referencia':days,'categoria':info['category'],
                'encuadernacion_ficha':info['binding'], 'existencias':info['stock'] or 'Sin número indicado',
                'confirmado_utc':now()}
-        checked.append({**offer,'resultado':'OFERTA VERIFICADA: novela, tapa dura, precio e histórico'})
+        checked.append({**offer,'resultado':'OFERTA VERIFICADA: novela, tapa dura, precio y disponibilidad'})
         offers.append(offer)
+    offers.sort(key=lambda offer: not offer['precio_referencia'])
     return low,checked,offers
 
 
@@ -502,12 +501,15 @@ def send_telegram_text(message):
 def send_telegram(offer):
     tok=os.environ.get('TELEGRAM_BOT_TOKEN','').strip();dest=os.environ.get('TELEGRAM_CHAT_ID','').strip()
     if not tok or not dest:return False,'Faltan TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID'
+    reference = ''
+    if offer['precio_referencia']:
+        reference = (f'Precio habitual observado: ${offer["precio_referencia"]} MXN '
+                     f'(más de $400 en {offer["dias_referencia"]} días distintos)\n')
     msg=(f'📚 NOVELA EN TAPA DURA: OFERTA VERIFICADA\n'
          f'{offer["titulo"]}\nAutor: {offer["autor"] or "Sin identificar"}\n'
          f'Editorial: {offer["catalogo"]}\n'
          f'Precio actual: ${offer["precio_mxn"]} MXN\n'
-         f'Precio observado anteriormente: ${offer["precio_referencia"]} MXN '
-         f'(>= $400 en {offer["dias_referencia"]} días distintos; no precio tachado)\n'
+         f'{reference}'
          f'Existencias: {offer["existencias"]}\n{offer["url"]}')
     return send_telegram_text(msg)
 
@@ -651,7 +653,7 @@ def scan(token,source,mode,parallel=1):
     write_csv('ofertas_confirmadas_v7.csv',offers,FIELDS+['precio_referencia','dias_referencia','categoria','encuadernacion_ficha','existencias','confirmado_utc'])
     lines=['MONITOR BUSCALIBRE V7 (criterios estrictos)',f'Inicio UTC: {start_at}',f'Fin UTC: {now()}',
            f'Duración: {time.monotonic()-started:.1f} segundos',f'Modo: {mode}; fuente: {source}; concurrencia: {parallel}',
-           'Requisitos: NOVELA + TAPA DURA + PRECIO ACTUAL <200 + >=400 OBSERVADO EN 3 DÍAS DISTINTOS ANTERIORES.',
+           'Requisitos: NOVELA + TAPA DURA + PRECIO ACTUAL <200; SE DESTACAN OFERTAS CON >400 OBSERVADO EN 3 DÍAS DISTINTOS ANTERIORES.',
            'Un precio tachado no cuenta como precio habitual. No se admiten géneros desconocidos.', '']
     for c in catalogs:
         lines.extend([f'EDITORIAL: {c.name}',f'  Páginas completas: {c.full}',
@@ -701,7 +703,7 @@ def self_test():
         '2026-11-03':{'min':'450.00'},'2026-11-04':{'min':'130.00'}}}}}
     ref,n=historical_reference(st,'book')
     assert ref==Decimal('430.00') and n==3
-    st['history']['book']['days']['2026-11-02']['min']='199.00'
+    st['history']['book']['days']['2026-11-02']['min']='400.00'
     ref,n=historical_reference(st,'book')
     assert ref is None and n==2
     print('TEST CORRECTO: formato, precio actual, editorial, autor opcional, novela e histórico de tres días.')
