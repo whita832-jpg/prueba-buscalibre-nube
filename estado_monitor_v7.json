@@ -35722,7 +35722,7 @@
   "github": "2026-11-18"
  },
  "last_scan": {
-  "utc": "2026-11-18T13:44:17+00:00",
+  "utc": "2026-11-18T15:33:10+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -35754,11 +35754,11 @@
     "closed": true
    }
   ],
-  "products": 387,
+  "products": 386,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-18T13:44:17+00:00",
+ "last_complete_catalog_utc": "2026-11-18T15:33:10+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -36146,7 +36146,6 @@
    "https://www.buscalibre.com.mx/libro-memorias-de-ultratumba-estuche-2-vols/9788496136878/p/14871140",
    "https://www.buscalibre.com.mx/libro-memorias/9788495359438/p/1027794",
    "https://www.buscalibre.com.mx/libro-novelas/9788415689157/p/18073928",
-   "https://www.buscalibre.com.mx/libro-relatos-del-padre-brown-los/9788496834460/p/3376329",
    "https://www.buscalibre.com.mx/libro-reportajes-de-la-historia/9788492649747/p/4152709",
    "https://www.buscalibre.com.mx/libro-the-paris-review/9788417902865/p/53089383",
    "https://www.buscalibre.com.mx/libro-vida-de-samuel-johnson/9788496489844/p/2517902"
