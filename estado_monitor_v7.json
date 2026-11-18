@@ -14837,6 +14837,10 @@
     "2026-11-17": {
      "min": "517.04",
      "max": "517.04"
+    },
+    "2026-11-18": {
+     "min": "517.04",
+     "max": "517.04"
     }
    }
   },
@@ -35710,7 +35714,7 @@
   "github": "2026-11-18"
  },
  "last_scan": {
-  "utc": "2026-11-18T06:40:08+00:00",
+  "utc": "2026-11-18T07:39:22+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -35746,7 +35750,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-18T06:40:08+00:00",
+ "last_complete_catalog_utc": "2026-11-18T07:39:22+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -36049,9 +36053,9 @@
    "https://www.buscalibre.com.mx/libro-petita-gran-rosa-parks-28/9788490655696/p/51622326",
    "https://www.buscalibre.com.mx/libro-petita-gran-rosalind-franklin/9788490658598/p/54044928",
    "https://www.buscalibre.com.mx/libro-petita-gran-simone-de-beauvoir-catalan/9788490654859/p/50657615",
+   "https://www.buscalibre.com.mx/libro-petita-gran-taylor-swift/9788411781596/p/64060226",
    "https://www.buscalibre.com.mx/libro-petita-gran-vivienne-westwood/9788490656112/p/51998545",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-coco-chanel/9788490650400/p/46407238",
-   "https://www.buscalibre.com.mx/libro-petita-i-gran-lucy-maud-montgomery-petita-gran/9788490655283/p/51442081",
    "https://www.buscalibre.com.mx/libro-petonets-de-xocolata-per-a-tota-la-familia/9788490650660/p/46407387",
    "https://www.buscalibre.com.mx/libro-pierre-y-jean/9788490652664/p/48005647",
    "https://www.buscalibre.com.mx/libro-pioneros/9788484280996/p/1852909",
