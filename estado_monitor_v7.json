@@ -51,7 +51,7 @@
      "max": "1011.23"
     },
     "2026-11-19": {
-     "min": "1011.23",
+     "min": "999.47",
      "max": "1011.23"
     }
    }
@@ -107,7 +107,7 @@
      "max": "801.22"
     },
     "2026-11-19": {
-     "min": "801.22",
+     "min": "792.53",
      "max": "801.22"
     }
    }
@@ -567,7 +567,7 @@
      "max": "2112.00"
     },
     "2026-11-19": {
-     "min": "1760.00",
+     "min": "1750.00",
      "max": "1760.00"
     }
    }
@@ -911,7 +911,7 @@
      "max": "515.00"
     },
     "2026-11-19": {
-     "min": "515.00",
+     "min": "507.52",
      "max": "515.00"
     }
    }
@@ -1639,7 +1639,7 @@
      "max": "836.22"
     },
     "2026-11-19": {
-     "min": "836.22",
+     "min": "826.98",
      "max": "836.22"
     }
    }
@@ -8747,7 +8747,7 @@
      "max": "502.27"
     },
     "2026-11-19": {
-     "min": "501.87",
+     "min": "497.95",
      "max": "501.87"
     }
    }
@@ -12467,7 +12467,7 @@
      "max": "521.49"
     },
     "2026-11-19": {
-     "min": "521.19",
+     "min": "516.71",
      "max": "521.19"
     }
    }
@@ -17843,7 +17843,7 @@
      "max": "521.49"
     },
     "2026-11-19": {
-     "min": "521.19",
+     "min": "516.71",
      "max": "521.19"
     }
    }
@@ -19235,7 +19235,7 @@
      "max": "504.22"
     },
     "2026-11-19": {
-     "min": "503.83",
+     "min": "499.63",
      "max": "503.83"
     }
    }
@@ -27455,7 +27455,7 @@
      "max": "556.31"
     },
     "2026-11-19": {
-     "min": "556.19",
+     "min": "551.43",
      "max": "556.19"
     }
    }
@@ -28247,7 +28247,7 @@
      "max": "935.91"
     },
     "2026-11-19": {
-     "min": "935.91",
+     "min": "913.68",
      "max": "935.91"
     }
    }
@@ -37262,7 +37262,7 @@
   "github": "2026-11-19"
  },
  "last_scan": {
-  "utc": "2026-11-19T16:37:38+00:00",
+  "utc": "2026-11-19T17:37:31+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -37298,7 +37298,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-19T16:37:38+00:00",
+ "last_complete_catalog_utc": "2026-11-19T17:37:31+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -37509,6 +37509,7 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-audrey-hepburn/9788490651117/p/46551352",
    "https://www.buscalibre.com.mx/libro-pequena-grande-carmen-amaya/9788490654972/p/50752852",
    "https://www.buscalibre.com.mx/libro-pequena-grande-dian-fossey/9788490653012/p/48169135",
+   "https://www.buscalibre.com.mx/libro-pequena-grande-ella-fitzgerald/9788490652749/p/48005642",
    "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514",
    "https://www.buscalibre.com.mx/libro-pequena-grande-gloria-fuertes/9788490653487/p/48975637",
    "https://www.buscalibre.com.mx/libro-pequena-grande-hannah-arendt/9788490657355/p/53150354",
