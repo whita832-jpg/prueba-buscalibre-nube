@@ -7424,7 +7424,7 @@
     },
     "2026-11-19": {
      "min": "545.00",
-     "max": "545.00"
+     "max": "571.63"
     }
    }
   },
@@ -16100,7 +16100,7 @@
     },
     "2026-11-19": {
      "min": "516.71",
-     "max": "516.71"
+     "max": "521.19"
     }
    }
   },
@@ -16755,7 +16755,7 @@
      "max": "521.49"
     },
     "2026-11-19": {
-     "min": "521.19",
+     "min": "516.71",
      "max": "521.19"
     }
    }
@@ -37262,7 +37262,7 @@
   "github": "2026-11-19"
  },
  "last_scan": {
-  "utc": "2026-11-19T22:16:52+00:00",
+  "utc": "2026-11-19T22:41:05+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -37298,7 +37298,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-19T22:16:52+00:00",
+ "last_complete_catalog_utc": "2026-11-19T22:41:05+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -37641,7 +37641,6 @@
    "https://www.buscalibre.com.mx/libro-un-heroe-de-nuestro-tiempo/9788490650387/p/46302981",
    "https://www.buscalibre.com.mx/libro-un-monstre/9788484289746/p/38285946",
    "https://www.buscalibre.com.mx/libro-un-monstruo/9788484289678/p/38285945",
-   "https://www.buscalibre.com.mx/libro-veronica/9788490654682/p/50591666",
    "https://www.buscalibre.com.mx/libro-veronica/9788490654699/p/50647956",
    "https://www.buscalibre.com.mx/libro-viaje-a-traves-de-la-moda/9788490658215/p/53697779",
    "https://www.buscalibre.com.mx/libro-viajeros/9788490656815/p/52901813",
