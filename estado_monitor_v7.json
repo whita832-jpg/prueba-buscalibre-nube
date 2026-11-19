@@ -37008,7 +37008,7 @@
     },
     "2026-11-19": {
      "min": "538.27",
-     "max": "538.27"
+     "max": "540.47"
     }
    }
   },
@@ -37262,7 +37262,7 @@
   "github": "2026-11-19"
  },
  "last_scan": {
-  "utc": "2026-11-19T20:32:37+00:00",
+  "utc": "2026-11-19T21:36:03+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -37298,7 +37298,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-19T20:32:37+00:00",
+ "last_complete_catalog_utc": "2026-11-19T21:36:03+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -37555,6 +37555,7 @@
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-en-el-deporte/9788490651438/p/46979213",
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-por-el-planeta/9788490652008/p/47387589",
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-por-la-ciencia/9788490654330/p/50151564",
+   "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-por-la-libertad-de-expresion/9788490653081/p/48181948",
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-por-la-tolerancia/9788490652374/p/47808054",
    "https://www.buscalibre.com.mx/libro-petit-gran-alan-turing/9788490657447/p/53195930",
    "https://www.buscalibre.com.mx/libro-petit-gran-bob-dylan/9788490656532/p/52458800",
