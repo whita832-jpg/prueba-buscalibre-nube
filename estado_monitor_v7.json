@@ -731,7 +731,7 @@
      "max": "716.00"
     },
     "2026-11-20": {
-     "min": "716.00",
+     "min": "694.52",
      "max": "716.00"
     }
    }
@@ -1287,7 +1287,7 @@
      "max": "280.00"
     },
     "2026-11-20": {
-     "min": "280.00",
+     "min": "250.29",
      "max": "280.00"
     }
    }
@@ -1467,7 +1467,7 @@
      "max": "1100.00"
     },
     "2026-11-20": {
-     "min": "1067.00",
+     "min": "940.17",
      "max": "1067.00"
     }
    }
@@ -38794,7 +38794,7 @@
   "github": "2026-11-20"
  },
  "last_scan": {
-  "utc": "2026-11-20T16:36:07+00:00",
+  "utc": "2026-11-20T17:36:40+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -38830,7 +38830,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-20T16:36:07+00:00",
+ "last_complete_catalog_utc": "2026-11-20T17:36:40+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -38853,6 +38853,7 @@
    "https://www.buscalibre.com.mx/libro-bajo-la-verde-fronda/9788490655948/p/51994261",
    "https://www.buscalibre.com.mx/libro-benito-cereno/9788490655665/p/51622335",
    "https://www.buscalibre.com.mx/libro-benvinguts-a-planeta-casa/9788411782456/p/65866207",
+   "https://www.buscalibre.com.mx/libro-bienvenidos-a-planeta-casa/9788411782449/p/65866206",
    "https://www.buscalibre.com.mx/libro-bob-capgirat/9788411781398/p/63520989",
    "https://www.buscalibre.com.mx/libro-bob-del-reves/9788411781381/p/63520849",
    "https://www.buscalibre.com.mx/libro-buenas-noches/9788490653067/p/48226689",
@@ -39013,7 +39014,6 @@
    "https://www.buscalibre.com.mx/libro-miles-davis-y-kind-of-blue/9788484281436/p/1021968",
    "https://www.buscalibre.com.mx/libro-moonwalk-autobiografia/9788484285557/p/3417436",
    "https://www.buscalibre.com.mx/libro-mst03-universo-spiderman/9788411015141/p/54109353",
-   "https://www.buscalibre.com.mx/libro-mujercitas-tapa-dura/9788412188875/p/54898613",
    "https://www.buscalibre.com.mx/libro-mundo-y-nina-mariposa/9788490652367/p/47862674",
    "https://www.buscalibre.com.mx/libro-nacionalismo-vasco-el/9788495921789/p/3350132",
    "https://www.buscalibre.com.mx/libro-narraciones-completas/9788489846661/p/3307682",
