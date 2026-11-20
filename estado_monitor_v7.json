@@ -24845,6 +24845,10 @@
     "2026-11-19": {
      "min": "509.09",
      "max": "516.71"
+    },
+    "2026-11-20": {
+     "min": "509.09",
+     "max": "509.09"
     }
    }
   },
@@ -38790,7 +38794,7 @@
   "github": "2026-11-20"
  },
  "last_scan": {
-  "utc": "2026-11-20T06:32:57+00:00",
+  "utc": "2026-11-20T07:38:15+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -38826,7 +38830,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-20T06:32:57+00:00",
+ "last_complete_catalog_utc": "2026-11-20T07:38:15+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -39054,6 +39058,7 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-pina-bausch/9788490658062/p/53599225",
    "https://www.buscalibre.com.mx/libro-pequena-grande-rosa-parks-28/9788490655689/p/51622329",
    "https://www.buscalibre.com.mx/libro-pequena-grande-rosalind-franklin-45/9788490658581/p/54044929",
+   "https://www.buscalibre.com.mx/libro-pequena-grande-simone-de-beauvoir/9788490654842/p/50657617",
    "https://www.buscalibre.com.mx/libro-pequena-grande-taylor-swift/9788411781572/p/64060225",
    "https://www.buscalibre.com.mx/libro-pequena-grande-teresa-de-calcuta/9788490654651/p/50591660",
    "https://www.buscalibre.com.mx/libro-pequena-grande-vivienne-westwood/9788490656105/p/51998546",
@@ -39168,7 +39173,6 @@
    "https://www.buscalibre.com.mx/libro-un-heroe-de-nuestro-tiempo/9788490650387/p/46302981",
    "https://www.buscalibre.com.mx/libro-un-monstre/9788484289746/p/38285946",
    "https://www.buscalibre.com.mx/libro-un-monstruo/9788484289678/p/38285945",
-   "https://www.buscalibre.com.mx/libro-veronica/9788490654682/p/50591666",
    "https://www.buscalibre.com.mx/libro-veronica/9788490654699/p/50647956",
    "https://www.buscalibre.com.mx/libro-viaje-a-traves-de-la-moda/9788490658215/p/53697779",
    "https://www.buscalibre.com.mx/libro-viajeros/9788490656815/p/52901813",
