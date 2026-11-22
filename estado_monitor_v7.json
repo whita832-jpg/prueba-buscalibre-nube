@@ -40326,7 +40326,7 @@
   "github": "2026-11-21"
  },
  "last_scan": {
-  "utc": "2026-11-22T00:27:46+00:00",
+  "utc": "2026-11-22T01:36:34+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -40358,11 +40358,11 @@
     "closed": true
    }
   ],
-  "products": 383,
+  "products": 382,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-22T00:27:46+00:00",
+ "last_complete_catalog_utc": "2026-11-22T01:36:34+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -40522,7 +40522,6 @@
    "https://www.buscalibre.com.mx/libro-las-alas-de-la-paloma/9788490651704/p/47247856",
    "https://www.buscalibre.com.mx/libro-las-cartas-de-chawton/9788490656020/p/51998549",
    "https://www.buscalibre.com.mx/libro-las-confesiones-del-senor-harrison/9788490654187/p/50025512",
-   "https://www.buscalibre.com.mx/libro-lejos-del-mundanal-ruido/9788484281559/p/6130741",
    "https://www.buscalibre.com.mx/libro-linus-i-les-estacions-infantil-ilustrado/9788490651810/p/47310651",
    "https://www.buscalibre.com.mx/libro-linus-y-las-estaciones/9788490651803/p/47292652",
    "https://www.buscalibre.com.mx/libro-lo-mas-selecto-cuentos-y-nouvelles/9788484282723/p/3326249",
