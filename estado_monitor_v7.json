@@ -41854,17 +41854,15 @@
   "github": "2026-11-22"
  },
  "last_scan": {
-  "utc": "2026-11-22T11:11:40+00:00",
-  "complete": false,
+  "utc": "2026-11-22T12:13:30+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -41892,7 +41890,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-22T09:13:12+00:00",
+ "last_complete_catalog_utc": "2026-11-22T12:13:30+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -42034,6 +42032,7 @@
    "https://www.buscalibre.com.mx/libro-la-linea-de-sombra/9788411782319/p/66850194",
    "https://www.buscalibre.com.mx/libro-la-marcha-radetsky/9788490656389/p/52293786",
    "https://www.buscalibre.com.mx/libro-la-media-luna-y-las-estrellas/9788484285847/p/4151251",
+   "https://www.buscalibre.com.mx/libro-la-mieko-balla/9788411780407/p/55862315",
    "https://www.buscalibre.com.mx/libro-la-muerta-enamorada-y-otros-relatos-fantasticos/9788411782012/p/64709107",
    "https://www.buscalibre.com.mx/libro-la-muerte-de-ivan-ilich/9788411781275/p/63300853",
    "https://www.buscalibre.com.mx/libro-la-mujer-de-blanco/9788411780315/p/55862316",
