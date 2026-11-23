@@ -1528,7 +1528,7 @@
     },
     "2026-11-23": {
      "min": "250.29",
-     "max": "250.29"
+     "max": "350.00"
     }
    }
   },
@@ -33196,7 +33196,7 @@
     },
     "2026-11-23": {
      "min": "629.80",
-     "max": "629.80"
+     "max": "653.89"
     }
    }
   },
@@ -43366,7 +43366,7 @@
   "github": "2026-11-23"
  },
  "last_scan": {
-  "utc": "2026-11-23T17:32:41+00:00",
+  "utc": "2026-11-23T18:33:17+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -43402,7 +43402,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-23T17:32:41+00:00",
+ "last_complete_catalog_utc": "2026-11-23T18:33:17+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -43602,6 +43602,7 @@
    "https://www.buscalibre.com.mx/libro-p-g-leo-messi/9788411782739/p/66884456",
    "https://www.buscalibre.com.mx/libro-p-g-leo-messi/9788411782746/p/66884457",
    "https://www.buscalibre.com.mx/libro-padres-e-hijos/9788490651063/p/46519518",
+   "https://www.buscalibre.com.mx/libro-pequena-grande-ada-lovelace/9788490653548/p/49087953",
    "https://www.buscalibre.com.mx/libro-pequena-grande-agatha-christie/9788490651940/p/47310652",
    "https://www.buscalibre.com.mx/libro-pequena-grande-amelia-earhart/9788490651728/p/47247860",
    "https://www.buscalibre.com.mx/libro-pequena-grande-anne-frank/9788490654194/p/50130834",
