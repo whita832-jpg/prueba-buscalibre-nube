@@ -41855,10 +41855,10 @@
  },
  "alerted": {},
  "direct_status": {
-  "github": "2026-11-22"
+  "github": "2026-11-23"
  },
  "last_scan": {
-  "utc": "2026-11-23T05:37:35+00:00",
+  "utc": "2026-11-23T06:16:01+00:00",
   "complete": false,
   "catalogs": [
    {
@@ -41892,7 +41892,7 @@
     "closed": true
    }
   ],
-  "products": 374,
+  "products": 375,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
