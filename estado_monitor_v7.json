@@ -3020,7 +3020,7 @@
     },
     "2026-11-22": {
      "min": "525.47",
-     "max": "525.47"
+     "max": "551.12"
     }
    }
   },
@@ -7664,7 +7664,7 @@
     },
     "2026-11-22": {
      "min": "870.28",
-     "max": "870.28"
+     "max": "973.60"
     }
    }
   },
@@ -9088,7 +9088,7 @@
     },
     "2026-11-22": {
      "min": "577.42",
-     "max": "577.42"
+     "max": "595.65"
     }
    }
   },
@@ -16748,7 +16748,7 @@
     },
     "2026-11-22": {
      "min": "637.11",
-     "max": "639.01"
+     "max": "644.53"
     }
    }
   },
@@ -18780,7 +18780,7 @@
     },
     "2026-11-22": {
      "min": "545.41",
-     "max": "545.41"
+     "max": "610.28"
     }
    }
   },
@@ -22328,7 +22328,7 @@
     },
     "2026-11-22": {
      "min": "545.41",
-     "max": "545.41"
+     "max": "610.28"
     }
    }
   },
@@ -22572,7 +22572,7 @@
     },
     "2026-11-22": {
      "min": "545.41",
-     "max": "545.41"
+     "max": "775.36"
     }
    }
   },
@@ -23608,7 +23608,7 @@
     },
     "2026-11-22": {
      "min": "545.41",
-     "max": "545.41"
+     "max": "580.80"
     }
    }
   },
@@ -26500,7 +26500,7 @@
     },
     "2026-11-22": {
      "min": "545.41",
-     "max": "545.41"
+     "max": "775.36"
     }
    }
   },
@@ -41544,7 +41544,7 @@
     },
     "2026-11-22": {
      "min": "545.41",
-     "max": "545.41"
+     "max": "693.40"
     }
    }
   },
@@ -41858,7 +41858,7 @@
   "github": "2026-11-22"
  },
  "last_scan": {
-  "utc": "2026-11-23T02:30:55+00:00",
+  "utc": "2026-11-23T03:40:21+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -41890,11 +41890,11 @@
     "closed": true
    }
   ],
-  "products": 382,
+  "products": 375,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-23T02:30:55+00:00",
+ "last_complete_catalog_utc": "2026-11-23T03:40:21+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -41948,7 +41948,6 @@
    "https://www.buscalibre.com.mx/libro-de-que-color-es/9788490653388/p/47277126",
    "https://www.buscalibre.com.mx/libro-de-quin-color-es-infantil-ilustrado/9788490653395/p/48975633",
    "https://www.buscalibre.com.mx/libro-diario-de-un-escritor/9788484283546/p/4204092",
-   "https://www.buscalibre.com.mx/libro-diario-del-ano-de-la-peste/9788490657096/p/52803146",
    "https://www.buscalibre.com.mx/libro-diarios-completos/9788490652336/p/47862647",
    "https://www.buscalibre.com.mx/libro-diarios-de-grasmere-y-alfoxden/9788490655122/p/51085010",
    "https://www.buscalibre.com.mx/libro-diccionario-de-los-suenos-de-la-a-la-z/9788495921741/p/3343698",
@@ -42025,7 +42024,6 @@
    "https://www.buscalibre.com.mx/libro-la-cocina-de-mi-madre/9788484285854/p/4151252",
    "https://www.buscalibre.com.mx/libro-la-copa-dorada/9788489846159/p/1021887",
    "https://www.buscalibre.com.mx/libro-la-divina-comedia/9788489715561/p/1449637",
-   "https://www.buscalibre.com.mx/libro-la-educacion-sentimental/9788490653944/p/49692785",
    "https://www.buscalibre.com.mx/libro-la-experiencia-de-leer/9788490659441/p/54473719",
    "https://www.buscalibre.com.mx/libro-la-feria-de-las-vanidades/9788490654965/p/50844365",
    "https://www.buscalibre.com.mx/libro-la-herencia-de-los-ferramonti/9788490659533/p/54898043",
@@ -42057,7 +42055,6 @@
    "https://www.buscalibre.com.mx/libro-lejos-del-mundanal-ruido/9788484281559/p/6130741",
    "https://www.buscalibre.com.mx/libro-linus-i-les-estacions-infantil-ilustrado/9788490651810/p/47310651",
    "https://www.buscalibre.com.mx/libro-linus-y-las-estaciones/9788490651803/p/47292652",
-   "https://www.buscalibre.com.mx/libro-lo-mas-selecto-cuentos-y-nouvelles/9788484282723/p/3326249",
    "https://www.buscalibre.com.mx/libro-los-demonios/9788490651926/p/47387586",
    "https://www.buscalibre.com.mx/libro-los-embajadores/9788490658680/p/54144543",
    "https://www.buscalibre.com.mx/libro-los-hermanos-karamazov/9788484289210/p/36720173",
@@ -42103,7 +42100,6 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-anne-frank/9788490654194/p/50130834",
    "https://www.buscalibre.com.mx/libro-pequena-grande-astrid-lindgren/9788490656884/p/52363979",
    "https://www.buscalibre.com.mx/libro-pequena-grande-audrey-hepburn/9788490651117/p/46551352",
-   "https://www.buscalibre.com.mx/libro-pequena-grande-carmen-amaya/9788490654972/p/50752852",
    "https://www.buscalibre.com.mx/libro-pequena-grande-dian-fossey/9788490653012/p/48169135",
    "https://www.buscalibre.com.mx/libro-pequena-grande-ella-fitzgerald/9788490652749/p/48005642",
    "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514",
@@ -42125,7 +42121,6 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-simone-de-beauvoir/9788490654842/p/50657617",
    "https://www.buscalibre.com.mx/libro-pequena-grande-taylor-swift/9788411781572/p/64060225",
    "https://www.buscalibre.com.mx/libro-pequena-grande-teresa-de-calcuta/9788490654651/p/50591660",
-   "https://www.buscalibre.com.mx/libro-pequena-grande-vivienne-westwood/9788490656105/p/51998546",
    "https://www.buscalibre.com.mx/libro-pequena-y-grande-frida-kahlo/9788490650813/p/46458130",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-alan-turing/9788490657430/p/53194888",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-bob-dylan/9788490656525/p/52489332",
@@ -42138,7 +42133,6 @@
    "https://www.buscalibre.com.mx/libro-pequeno-grande-louis-braille/9788411782487/p/65878046",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-mahatma-gandhi/9788490655221/p/51379097",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-martin-luther-king/9788490656396/p/52325647",
-   "https://www.buscalibre.com.mx/libro-pequeno-grande-muhammad-ali/9788490654804/p/50752858",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-pablo-picasso-44-pequena-grande/9788490658543/p/53951314",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-pele/9788490659922/p/54633605",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-rafa-nadal/9788411780247/p/55728392",
@@ -42146,7 +42140,6 @@
    "https://www.buscalibre.com.mx/libro-pequeno-grande-salvador-dali/9788411780735/p/57031303",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-stephen-hawking/9788490654828/p/50752856",
    "https://www.buscalibre.com.mx/libro-pequeno/9788411781978/p/64612114",
-   "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-contra-la-discriminacion/9788490651421/p/46979209",
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-en-el-arte/9788490656860/p/53003315",
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-en-el-deporte/9788490651438/p/46979213",
    "https://www.buscalibre.com.mx/libro-pequenos-grandes-gestos-por-el-planeta/9788490652008/p/47387589",
@@ -42237,11 +42230,11 @@
    "https://www.buscalibre.com.mx/libro-un-heroe-de-nuestro-tiempo/9788490650387/p/46302981",
    "https://www.buscalibre.com.mx/libro-un-monstre/9788484289746/p/38285946",
    "https://www.buscalibre.com.mx/libro-un-monstruo/9788484289678/p/38285945",
+   "https://www.buscalibre.com.mx/libro-veronica/9788490654682/p/50591666",
    "https://www.buscalibre.com.mx/libro-veronica/9788490654699/p/50647956",
    "https://www.buscalibre.com.mx/libro-viaje-a-traves-de-la-moda/9788490658215/p/53697779",
    "https://www.buscalibre.com.mx/libro-viajeros/9788490656815/p/52901813",
    "https://www.buscalibre.com.mx/libro-vida-y-aventuras-de-martin-chuzzlewit/9788490653036/p/48169418",
-   "https://www.buscalibre.com.mx/libro-washington-square/9788484285816/p/4151250",
    "https://www.buscalibre.com.mx/libro-ya-me-gusta-cocinar-para-emancipados-con-experiencia/9788484283133/p/4151232",
    "https://www.buscalibre.com.mx/libro-yo-el-libro-de-tu-vida/9788484289111/p/34312974"
   ],
