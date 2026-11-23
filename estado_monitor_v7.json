@@ -32753,6 +32753,10 @@
     "2026-11-22": {
      "min": "574.90",
      "max": "574.90"
+    },
+    "2026-11-23": {
+     "min": "577.44",
+     "max": "577.44"
     }
    }
   },
@@ -43362,7 +43366,7 @@
   "github": "2026-11-23"
  },
  "last_scan": {
-  "utc": "2026-11-23T14:43:51+00:00",
+  "utc": "2026-11-23T14:55:41+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -43394,11 +43398,11 @@
     "closed": true
    }
   ],
-  "products": 376,
+  "products": 377,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-23T14:43:51+00:00",
+ "last_complete_catalog_utc": "2026-11-23T14:55:41+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -43710,6 +43714,7 @@
    "https://www.buscalibre.com.mx/libro-proscritas/9788490656464/p/52358805",
    "https://www.buscalibre.com.mx/libro-quien-tiene-la-culpa/9788411780438/p/55964453",
    "https://www.buscalibre.com.mx/libro-recetas-para-bebes-y-ninos-papillas-variadas-y-menus-irresistibles-para-tus-hijos-a-partir-de-los-6-meses/9788484281832/p/2896877",
+   "https://www.buscalibre.com.mx/libro-relatos-de-musica-y-musicos/9788490654347/p/50151565",
    "https://www.buscalibre.com.mx/libro-relatos-de-sevastopol/9788484288978/p/34312972",
    "https://www.buscalibre.com.mx/libro-relatos-del-mar/9788490650011/p/42082497",
    "https://www.buscalibre.com.mx/libro-rojo-y-negro/9788490650370/p/46304584",
@@ -43746,6 +43751,7 @@
   "Alba Editorial": [
    "https://www.buscalibre.com.mx/libro-agenda-literaria-2027-literatura-y-cine/9788411782890/p/68895139",
    "https://www.buscalibre.com.mx/libro-bajo-la-luna-del-olivo-diez-fabulas-palestinas-contadas-por-una-madre-en-gaza/9788411783088/p/68882641",
+   "https://www.buscalibre.com.mx/libro-el-jugador/9788411782784/p/68338693",
    "https://www.buscalibre.com.mx/libro-el-retrato-de-dorian-gray/9788411782845/p/68882645",
    "https://www.buscalibre.com.mx/libro-en-busca-del-tiempo-perdido-iv-albertine-desaparecida-el-tiempo-recuperado/9788411782920/p/69399790",
    "https://www.buscalibre.com.mx/libro-estrofas-rotas-poesia-reunida/9788411782968/p/69329340",
