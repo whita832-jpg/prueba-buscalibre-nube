@@ -1152,7 +1152,7 @@
     },
     "2026-11-23": {
      "min": "507.52",
-     "max": "507.52"
+     "max": "515.00"
     }
    }
   },
@@ -1223,7 +1223,7 @@
      "max": "725.00"
     },
     "2026-11-23": {
-     "min": "516.75",
+     "min": "487.00",
      "max": "516.75"
     }
    }
@@ -1599,7 +1599,7 @@
      "max": "752.45"
     },
     "2026-11-23": {
-     "min": "752.45",
+     "min": "744.61",
      "max": "752.45"
     }
    }
@@ -43366,7 +43366,7 @@
   "github": "2026-11-23"
  },
  "last_scan": {
-  "utc": "2026-11-23T15:36:43+00:00",
+  "utc": "2026-11-23T17:12:05+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -43398,11 +43398,11 @@
     "closed": true
    }
   ],
-  "products": 377,
+  "products": 376,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-23T15:36:43+00:00",
+ "last_complete_catalog_utc": "2026-11-23T17:12:05+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -43554,7 +43554,6 @@
    "https://www.buscalibre.com.mx/libro-la-piedra-lunar/9788484285977/p/4082546",
    "https://www.buscalibre.com.mx/libro-la-princesa-de-las-remolachas-y-otros-cuentos-populares-ineditos/9788490653791/p/49690864",
    "https://www.buscalibre.com.mx/libro-la-regenta/9788490658406/p/53984378",
-   "https://www.buscalibre.com.mx/libro-la-senora-bovary/9788484287582/p/11012427",
    "https://www.buscalibre.com.mx/libro-la-tortuga-de-l-avi-genis/9788411781053/p/62227376",
    "https://www.buscalibre.com.mx/libro-la-tortuga-del-abuelo-gines/9788411781046/p/62235045",
    "https://www.buscalibre.com.mx/libro-lady-ludlow/9788411781831/p/64601889",
@@ -43603,7 +43602,6 @@
    "https://www.buscalibre.com.mx/libro-p-g-leo-messi/9788411782739/p/66884456",
    "https://www.buscalibre.com.mx/libro-p-g-leo-messi/9788411782746/p/66884457",
    "https://www.buscalibre.com.mx/libro-padres-e-hijos/9788490651063/p/46519518",
-   "https://www.buscalibre.com.mx/libro-pequena-grande-ada-lovelace/9788490653548/p/49087953",
    "https://www.buscalibre.com.mx/libro-pequena-grande-agatha-christie/9788490651940/p/47310652",
    "https://www.buscalibre.com.mx/libro-pequena-grande-amelia-earhart/9788490651728/p/47247860",
    "https://www.buscalibre.com.mx/libro-pequena-grande-anne-frank/9788490654194/p/50130834",
