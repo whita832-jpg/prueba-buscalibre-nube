@@ -15569,6 +15569,10 @@
     "2026-11-23": {
      "min": "511.63",
      "max": "610.28"
+    },
+    "2026-11-24": {
+     "min": "610.28",
+     "max": "610.28"
     }
    }
   },
@@ -44858,7 +44862,7 @@
   "github": "2026-11-24"
  },
  "last_scan": {
-  "utc": "2026-11-24T07:36:20+00:00",
+  "utc": "2026-11-24T08:36:33+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -44894,7 +44898,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-24T07:36:20+00:00",
+ "last_complete_catalog_utc": "2026-11-24T08:36:33+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -45102,6 +45106,7 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-dian-fossey/9788490653012/p/48169135",
    "https://www.buscalibre.com.mx/libro-pequena-grande-ella-fitzgerald/9788490652749/p/48005642",
    "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514",
+   "https://www.buscalibre.com.mx/libro-pequena-grande-gloria-fuertes/9788490653487/p/48975637",
    "https://www.buscalibre.com.mx/libro-pequena-grande-hannah-arendt/9788490657355/p/53150354",
    "https://www.buscalibre.com.mx/libro-pequena-grande-harriet-tubman/9788490654316/p/50197854",
    "https://www.buscalibre.com.mx/libro-pequena-grande-hedy-lamarr/9788490659779/p/54907618",
@@ -45160,7 +45165,6 @@
    "https://www.buscalibre.com.mx/libro-petit-gran-muhammad-ali/9788490654811/p/50752857",
    "https://www.buscalibre.com.mx/libro-petit-gran-pablo-picasso-44-pequena-grande/9788490658550/p/53951313",
    "https://www.buscalibre.com.mx/libro-petit-gran-pele/9788490659939/p/54633603",
-   "https://www.buscalibre.com.mx/libro-petit-gran-rafa-nadal/9788411780254/p/55728391",
    "https://www.buscalibre.com.mx/libro-petit-gran-rudolf-nureiev-27/9788490655719/p/51622320",
    "https://www.buscalibre.com.mx/libro-petit-gran-salvador-dali/9788411780742/p/57031314",
    "https://www.buscalibre.com.mx/libro-petit-gran-stephen-hawking/9788490654835/p/50752854",
