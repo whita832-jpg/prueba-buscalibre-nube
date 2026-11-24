@@ -4524,7 +4524,7 @@
     },
     "2026-11-24": {
      "min": "773.98",
-     "max": "773.98"
+     "max": "779.62"
     }
    }
   },
@@ -9796,7 +9796,7 @@
     },
     "2026-11-24": {
      "min": "491.78",
-     "max": "491.78"
+     "max": "565.07"
     }
    }
   },
@@ -11616,7 +11616,7 @@
     },
     "2026-11-24": {
      "min": "723.59",
-     "max": "723.59"
+     "max": "1090.91"
     }
    }
   },
@@ -13224,7 +13224,7 @@
     },
     "2026-11-24": {
      "min": "733.56",
-     "max": "733.56"
+     "max": "944.95"
     }
    }
   },
@@ -44801,6 +44801,10 @@
     "2026-11-23": {
      "min": "786.06",
      "max": "786.06"
+    },
+    "2026-11-24": {
+     "min": "943.27",
+     "max": "943.27"
     }
    }
   },
@@ -44862,17 +44866,15 @@
   "github": "2026-11-24"
  },
  "last_scan": {
-  "utc": "2026-11-24T15:11:46+00:00",
-  "complete": false,
+  "utc": "2026-11-24T15:46:21+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -44896,11 +44898,11 @@
     "closed": true
    }
   ],
-  "products": 374,
+  "products": 375,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-24T14:09:11+00:00",
+ "last_complete_catalog_utc": "2026-11-24T15:46:21+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -44974,7 +44976,6 @@
    "https://www.buscalibre.com.mx/libro-el-eterno-marido/9788411780537/p/55984489",
    "https://www.buscalibre.com.mx/libro-el-gran-libro-secreto-de-la-paella/9788411782128/p/64597846",
    "https://www.buscalibre.com.mx/libro-el-idiota/9788490656075/p/52542135",
-   "https://www.buscalibre.com.mx/libro-el-jardin-del-profeta-la-procesion/9788492143139/p/47568077",
    "https://www.buscalibre.com.mx/libro-el-kamasutra/9788489715615/p/1449640",
    "https://www.buscalibre.com.mx/libro-el-libro-de-la-tierra/9788490659700/p/54556211",
    "https://www.buscalibre.com.mx/libro-el-libro-de-las-brujas-casos-de-brujeria-en-inglaterra-y-en-las-colonias-norteamericanas-1582-1813/9788490652244/p/47562131",
@@ -45052,6 +45053,7 @@
    "https://www.buscalibre.com.mx/libro-la-piedra-lunar/9788484285977/p/4082546",
    "https://www.buscalibre.com.mx/libro-la-princesa-de-las-remolachas-y-otros-cuentos-populares-ineditos/9788490653791/p/49690864",
    "https://www.buscalibre.com.mx/libro-la-regenta/9788490658406/p/53984378",
+   "https://www.buscalibre.com.mx/libro-la-senora-bovary/9788484287582/p/11012427",
    "https://www.buscalibre.com.mx/libro-la-tortuga-de-l-avi-genis/9788411781053/p/62227376",
    "https://www.buscalibre.com.mx/libro-la-tortuga-del-abuelo-gines/9788411781046/p/62235045",
    "https://www.buscalibre.com.mx/libro-lady-ludlow/9788411781831/p/64601889",
