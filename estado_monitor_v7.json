@@ -1059,7 +1059,7 @@
      "max": "1264.18"
     },
     "2026-11-24": {
-     "min": "1264.18",
+     "min": "1193.57",
      "max": "1264.18"
     }
    }
@@ -2199,7 +2199,7 @@
      "max": "986.28"
     },
     "2026-11-24": {
-     "min": "986.28",
+     "min": "888.72",
      "max": "986.28"
     }
    }
@@ -2715,7 +2715,7 @@
      "max": "862.29"
     },
     "2026-11-24": {
-     "min": "862.29",
+     "min": "816.75",
      "max": "862.29"
     }
    }
@@ -3347,7 +3347,7 @@
      "max": "661.34"
     },
     "2026-11-24": {
-     "min": "661.34",
+     "min": "530.42",
      "max": "661.34"
     }
    }
@@ -5575,7 +5575,7 @@
      "max": "650.21"
     },
     "2026-11-24": {
-     "min": "650.21",
+     "min": "605.94",
      "max": "650.21"
     }
    }
@@ -6039,7 +6039,7 @@
      "max": "944.95"
     },
     "2026-11-24": {
-     "min": "944.95",
+     "min": "889.22",
      "max": "944.95"
     }
    }
@@ -8383,7 +8383,7 @@
      "max": "973.60"
     },
     "2026-11-24": {
-     "min": "973.60",
+     "min": "875.22",
      "max": "973.60"
     }
    }
@@ -8725,6 +8725,10 @@
     "2026-11-22": {
      "min": "675.03",
      "max": "675.03"
+    },
+    "2026-11-24": {
+     "min": "679.97",
+     "max": "679.97"
     }
    }
   },
@@ -9911,7 +9915,7 @@
      "max": "655.22"
     },
     "2026-11-24": {
-     "min": "636.54",
+     "min": "582.36",
      "max": "636.54"
     }
    }
@@ -10097,6 +10101,10 @@
     "2026-11-22": {
      "min": "936.86",
      "max": "936.86"
+    },
+    "2026-11-24": {
+     "min": "941.80",
+     "max": "941.80"
     }
    }
   },
@@ -10991,7 +10999,7 @@
      "max": "591.45"
     },
     "2026-11-24": {
-     "min": "591.45",
+     "min": "556.78",
      "max": "591.45"
     }
    }
@@ -11183,7 +11191,7 @@
      "max": "686.54"
     },
     "2026-11-24": {
-     "min": "686.54",
+     "min": "664.47",
      "max": "686.54"
     }
    }
@@ -11331,7 +11339,7 @@
      "max": "650.21"
     },
     "2026-11-24": {
-     "min": "650.21",
+     "min": "641.07",
      "max": "650.21"
     }
    }
@@ -11909,6 +11917,10 @@
     "2026-11-22": {
      "min": "905.61",
      "max": "905.61"
+    },
+    "2026-11-24": {
+     "min": "910.56",
+     "max": "910.56"
     }
    }
   },
@@ -12309,6 +12321,10 @@
     "2026-11-22": {
      "min": "636.13",
      "max": "636.13"
+    },
+    "2026-11-24": {
+     "min": "641.07",
+     "max": "641.07"
     }
    }
   },
@@ -12867,7 +12883,7 @@
      "max": "542.32"
     },
     "2026-11-24": {
-     "min": "529.33",
+     "min": "517.95",
      "max": "529.33"
     }
    }
@@ -13787,7 +13803,7 @@
      "max": "639.09"
     },
     "2026-11-24": {
-     "min": "621.22",
+     "min": "580.27",
      "max": "621.22"
     }
    }
@@ -13871,7 +13887,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -15387,7 +15403,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -15487,7 +15503,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -15571,7 +15587,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -16879,7 +16895,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -17307,7 +17323,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -17567,7 +17583,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -18001,6 +18017,10 @@
     "2026-11-22": {
      "min": "545.41",
      "max": "545.41"
+    },
+    "2026-11-24": {
+     "min": "550.36",
+     "max": "550.36"
     }
    }
   },
@@ -18069,6 +18089,10 @@
     "2026-11-22": {
      "min": "545.41",
      "max": "545.41"
+    },
+    "2026-11-24": {
+     "min": "550.36",
+     "max": "550.36"
     }
    }
   },
@@ -18151,7 +18175,7 @@
      "max": "708.98"
     },
     "2026-11-24": {
-     "min": "687.59",
+     "min": "643.95",
      "max": "687.59"
     }
    }
@@ -18903,7 +18927,7 @@
      "max": "639.83"
     },
     "2026-11-24": {
-     "min": "639.83",
+     "min": "550.36",
      "max": "639.83"
     }
    }
@@ -20123,7 +20147,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -20359,7 +20383,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -22983,7 +23007,7 @@
      "max": "587.75"
     },
     "2026-11-24": {
-     "min": "587.75",
+     "min": "517.95",
      "max": "587.75"
     }
    }
@@ -23251,7 +23275,7 @@
      "max": "587.75"
     },
     "2026-11-24": {
-     "min": "587.75",
+     "min": "506.49",
      "max": "587.75"
     }
    }
@@ -23327,7 +23351,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -24215,7 +24239,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -24375,7 +24399,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -24483,7 +24507,7 @@
      "max": "852.89"
     },
     "2026-11-24": {
-     "min": "824.26",
+     "min": "550.36",
      "max": "824.26"
     }
    }
@@ -25087,7 +25111,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -25591,7 +25615,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -25843,7 +25867,7 @@
      "max": "676.13"
     },
     "2026-11-24": {
-     "min": "676.13",
+     "min": "580.27",
      "max": "676.13"
     }
    }
@@ -26247,7 +26271,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -28031,7 +28055,7 @@
      "max": "787.35"
     },
     "2026-11-24": {
-     "min": "787.35",
+     "min": "706.14",
      "max": "787.35"
     }
    }
@@ -28199,7 +28223,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -28687,7 +28711,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -28763,7 +28787,7 @@
      "max": "852.89"
     },
     "2026-11-24": {
-     "min": "824.26",
+     "min": "550.36",
      "max": "824.26"
     }
    }
@@ -29375,7 +29399,7 @@
      "max": "570.36"
     },
     "2026-11-24": {
-     "min": "570.36",
+     "min": "550.36",
      "max": "570.36"
     }
    }
@@ -29543,7 +29567,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -30375,7 +30399,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -30451,7 +30475,7 @@
      "max": "619.34"
     },
     "2026-11-24": {
-     "min": "619.34",
+     "min": "550.36",
      "max": "619.34"
     }
    }
@@ -31445,6 +31469,10 @@
     "2026-11-22": {
      "min": "545.41",
      "max": "545.41"
+    },
+    "2026-11-24": {
+     "min": "550.36",
+     "max": "550.36"
     }
    }
   },
@@ -31519,7 +31547,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -33635,7 +33663,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -34172,7 +34200,7 @@
     },
     "2026-11-24": {
      "min": "451.25",
-     "max": "451.25"
+     "max": "755.76"
     }
    }
   },
@@ -44427,7 +44455,7 @@
      "max": "610.28"
     },
     "2026-11-24": {
-     "min": "610.28",
+     "min": "550.36",
      "max": "610.28"
     }
    }
@@ -44503,7 +44531,7 @@
      "max": "762.74"
     },
     "2026-11-24": {
-     "min": "738.65",
+     "min": "550.36",
      "max": "738.65"
     }
    }
@@ -44655,7 +44683,7 @@
      "max": "613.96"
     },
     "2026-11-24": {
-     "min": "613.96",
+     "min": "550.36",
      "max": "613.96"
     }
    }
@@ -44866,7 +44894,7 @@
   "github": "2026-11-24"
  },
  "last_scan": {
-  "utc": "2026-11-24T17:46:19+00:00",
+  "utc": "2026-11-24T19:09:47+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -44898,11 +44926,11 @@
     "closed": true
    }
   ],
-  "products": 375,
+  "products": 382,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-24T17:46:19+00:00",
+ "last_complete_catalog_utc": "2026-11-24T19:09:47+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -44956,6 +44984,7 @@
    "https://www.buscalibre.com.mx/libro-de-que-color-es/9788490653388/p/47277126",
    "https://www.buscalibre.com.mx/libro-de-quin-color-es-infantil-ilustrado/9788490653395/p/48975633",
    "https://www.buscalibre.com.mx/libro-diario-de-un-escritor/9788484283546/p/4204092",
+   "https://www.buscalibre.com.mx/libro-diario-del-ano-de-la-peste/9788490657096/p/52803146",
    "https://www.buscalibre.com.mx/libro-diarios-completos/9788490652336/p/47862647",
    "https://www.buscalibre.com.mx/libro-diarios-de-grasmere-y-alfoxden/9788490655122/p/51085010",
    "https://www.buscalibre.com.mx/libro-diccionario-de-los-suenos-de-la-a-la-z/9788495921741/p/3343698",
@@ -45032,6 +45061,7 @@
    "https://www.buscalibre.com.mx/libro-la-cocina-de-mi-madre/9788484285854/p/4151252",
    "https://www.buscalibre.com.mx/libro-la-copa-dorada/9788489846159/p/1021887",
    "https://www.buscalibre.com.mx/libro-la-divina-comedia/9788489715561/p/1449637",
+   "https://www.buscalibre.com.mx/libro-la-educacion-sentimental/9788490653944/p/49692785",
    "https://www.buscalibre.com.mx/libro-la-experiencia-de-leer/9788490659441/p/54473719",
    "https://www.buscalibre.com.mx/libro-la-feria-de-las-vanidades/9788490654965/p/50844365",
    "https://www.buscalibre.com.mx/libro-la-herencia-de-los-ferramonti/9788490659533/p/54898043",
@@ -45064,6 +45094,7 @@
    "https://www.buscalibre.com.mx/libro-lejos-del-mundanal-ruido/9788484281559/p/6130741",
    "https://www.buscalibre.com.mx/libro-linus-i-les-estacions-infantil-ilustrado/9788490651810/p/47310651",
    "https://www.buscalibre.com.mx/libro-linus-y-las-estaciones/9788490651803/p/47292652",
+   "https://www.buscalibre.com.mx/libro-lo-mas-selecto-cuentos-y-nouvelles/9788484282723/p/3326249",
    "https://www.buscalibre.com.mx/libro-los-demonios/9788490651926/p/47387586",
    "https://www.buscalibre.com.mx/libro-los-embajadores/9788490658680/p/54144543",
    "https://www.buscalibre.com.mx/libro-los-hermanos-karamazov/9788484289210/p/36720173",
@@ -45108,6 +45139,7 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-anne-frank/9788490654194/p/50130834",
    "https://www.buscalibre.com.mx/libro-pequena-grande-astrid-lindgren/9788490656884/p/52363979",
    "https://www.buscalibre.com.mx/libro-pequena-grande-audrey-hepburn/9788490651117/p/46551352",
+   "https://www.buscalibre.com.mx/libro-pequena-grande-carmen-amaya/9788490654972/p/50752852",
    "https://www.buscalibre.com.mx/libro-pequena-grande-dian-fossey/9788490653012/p/48169135",
    "https://www.buscalibre.com.mx/libro-pequena-grande-ella-fitzgerald/9788490652749/p/48005642",
    "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514",
@@ -45129,6 +45161,7 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-simone-de-beauvoir/9788490654842/p/50657617",
    "https://www.buscalibre.com.mx/libro-pequena-grande-taylor-swift/9788411781572/p/64060225",
    "https://www.buscalibre.com.mx/libro-pequena-grande-teresa-de-calcuta/9788490654651/p/50591660",
+   "https://www.buscalibre.com.mx/libro-pequena-grande-vivienne-westwood/9788490656105/p/51998546",
    "https://www.buscalibre.com.mx/libro-pequena-y-grande-frida-kahlo/9788490650813/p/46458130",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-alan-turing/9788490657430/p/53194888",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-bob-dylan/9788490656525/p/52489332",
@@ -45141,6 +45174,7 @@
    "https://www.buscalibre.com.mx/libro-pequeno-grande-louis-braille/9788411782487/p/65878046",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-mahatma-gandhi/9788490655221/p/51379097",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-martin-luther-king/9788490656396/p/52325647",
+   "https://www.buscalibre.com.mx/libro-pequeno-grande-muhammad-ali/9788490654804/p/50752858",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-pablo-picasso-44-pequena-grande/9788490658543/p/53951314",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-pele/9788490659922/p/54633605",
    "https://www.buscalibre.com.mx/libro-pequeno-grande-rafa-nadal/9788411780247/p/55728392",
@@ -45243,6 +45277,7 @@
    "https://www.buscalibre.com.mx/libro-viaje-a-traves-de-la-moda/9788490658215/p/53697779",
    "https://www.buscalibre.com.mx/libro-viajeros/9788490656815/p/52901813",
    "https://www.buscalibre.com.mx/libro-vida-y-aventuras-de-martin-chuzzlewit/9788490653036/p/48169418",
+   "https://www.buscalibre.com.mx/libro-washington-square/9788484285816/p/4151250",
    "https://www.buscalibre.com.mx/libro-ya-me-gusta-cocinar-para-emancipados-con-experiencia/9788484283133/p/4151232",
    "https://www.buscalibre.com.mx/libro-yo-el-libro-de-tu-vida/9788484289111/p/34312974"
   ],
