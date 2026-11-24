@@ -1296,7 +1296,7 @@
     },
     "2026-11-23": {
      "min": "562.86",
-     "max": "562.86"
+     "max": "762.74"
     }
    }
   },
@@ -43366,7 +43366,7 @@
   "github": "2026-11-23"
  },
  "last_scan": {
-  "utc": "2026-11-24T02:20:39+00:00",
+  "utc": "2026-11-24T03:36:14+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -43402,7 +43402,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-24T02:20:39+00:00",
+ "last_complete_catalog_utc": "2026-11-24T03:36:14+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -43593,6 +43593,7 @@
    "https://www.buscalibre.com.mx/libro-norte-y-sur/9788484282594/p/4151229",
    "https://www.buscalibre.com.mx/libro-nube-infantil-ilustrado/9788484289982/p/40767271",
    "https://www.buscalibre.com.mx/libro-oblomov/9788411782166/p/64714417",
+   "https://www.buscalibre.com.mx/libro-obras-selectas-de-homero/9788412188868/p/62641838",
    "https://www.buscalibre.com.mx/libro-oliver-twist/9788484282433/p/6049517",
    "https://www.buscalibre.com.mx/libro-om-el-nino-salvaje/9788490652268/p/47562141",
    "https://www.buscalibre.com.mx/libro-om-infantil-ilustrado/9788490653326/p/48097796",
