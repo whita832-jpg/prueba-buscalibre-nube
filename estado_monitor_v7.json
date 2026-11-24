@@ -44866,15 +44866,17 @@
   "github": "2026-11-24"
  },
  "last_scan": {
-  "utc": "2026-11-24T15:46:21+00:00",
-  "complete": true,
+  "utc": "2026-11-24T16:38:09+00:00",
+  "complete": false,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     8
+    ],
+    "closed": false
    },
    {
     "name": "Alba Editorial",
