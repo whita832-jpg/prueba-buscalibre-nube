@@ -8077,6 +8077,10 @@
     "2026-11-09": {
      "min": "663.31",
      "max": "663.31"
+    },
+    "2026-11-25": {
+     "min": "724.51",
+     "max": "724.51"
     }
    }
   },
@@ -46422,7 +46426,7 @@
   "github": "2026-11-25"
  },
  "last_scan": {
-  "utc": "2026-11-25T13:37:22+00:00",
+  "utc": "2026-11-25T14:32:42+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -46454,11 +46458,11 @@
     "closed": true
    }
   ],
-  "products": 382,
+  "products": 383,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-25T13:37:22+00:00",
+ "last_complete_catalog_utc": "2026-11-25T14:32:42+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -46544,6 +46548,7 @@
    "https://www.buscalibre.com.mx/libro-el-misterio-de-notting-hill/9788490651100/p/46551347",
    "https://www.buscalibre.com.mx/libro-el-origen-de-las-especies-tapa-dura/9788495921673/p/54473220",
    "https://www.buscalibre.com.mx/libro-el-pequeno-circo-de-asno-y-camello/9788490651759/p/47256219",
+   "https://www.buscalibre.com.mx/libro-el-pequeno-dombey-y-otras-adaptaciones-de-novelas-para-leer-en-publico/9788490656952/p/52803145",
    "https://www.buscalibre.com.mx/libro-el-profeta/9788492143108/p/50596232",
    "https://www.buscalibre.com.mx/libro-el-puente-de-alexander/9788490655252/p/51433944",
    "https://www.buscalibre.com.mx/libro-el-quadre-infantil-ilustrado/9788490653470/p/48975636",
@@ -46640,6 +46645,7 @@
    "https://www.buscalibre.com.mx/libro-middlemarch/9788484280194/p/3313878",
    "https://www.buscalibre.com.mx/libro-mieko-baila/9788411780391/p/55862314",
    "https://www.buscalibre.com.mx/libro-miles-davis-y-kind-of-blue/9788484281436/p/1021968",
+   "https://www.buscalibre.com.mx/libro-mis-primeros-poemas-antologia-de-poesia-espanola-para-ninos-y-ninas/9788490659236/p/54400071",
    "https://www.buscalibre.com.mx/libro-mst03-universo-spiderman/9788411015141/p/54109353",
    "https://www.buscalibre.com.mx/libro-mujercitas-tapa-dura/9788412188875/p/54898613",
    "https://www.buscalibre.com.mx/libro-mundo-y-nina-mariposa/9788490652367/p/47862674",
@@ -46789,7 +46795,6 @@
    "https://www.buscalibre.com.mx/libro-sin-trama-y-sin-final-99-consejos-para-escritores/9788490659328/p/54331679",
    "https://www.buscalibre.com.mx/libro-su-excelencia-eugene-rougon/9788411780636/p/57029925",
    "https://www.buscalibre.com.mx/libro-tareas-domesticas-para-emancipados/9788484281986/p/1827855",
-   "https://www.buscalibre.com.mx/libro-tenemos-un-huerto/9788490658666/p/54093178",
    "https://www.buscalibre.com.mx/libro-tenim-un-hort/9788490658673/p/54104824",
    "https://www.buscalibre.com.mx/libro-teresa-de-calcuta/9788490654668/p/50655303",
    "https://www.buscalibre.com.mx/libro-tess-de-los-d-urberville/9788490653425/p/48975634",
