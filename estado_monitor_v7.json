@@ -305,6 +305,10 @@
     "2026-11-18": {
      "min": "692.81",
      "max": "693.41"
+    },
+    "2026-11-25": {
+     "min": "817.59",
+     "max": "817.59"
     }
    }
   },
@@ -544,7 +548,7 @@
     },
     "2026-11-25": {
      "min": "902.95",
-     "max": "902.95"
+     "max": "950.66"
     }
    }
   },
@@ -3880,7 +3884,7 @@
     },
     "2026-11-25": {
      "min": "751.01",
-     "max": "751.01"
+     "max": "986.28"
     }
    }
   },
@@ -46418,7 +46422,7 @@
   "github": "2026-11-25"
  },
  "last_scan": {
-  "utc": "2026-11-25T11:41:05+00:00",
+  "utc": "2026-11-25T13:10:57+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -46450,11 +46454,11 @@
     "closed": true
    }
   ],
-  "products": 381,
+  "products": 382,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-25T11:41:05+00:00",
+ "last_complete_catalog_utc": "2026-11-25T13:10:57+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -46540,7 +46544,6 @@
    "https://www.buscalibre.com.mx/libro-el-misterio-de-notting-hill/9788490651100/p/46551347",
    "https://www.buscalibre.com.mx/libro-el-origen-de-las-especies-tapa-dura/9788495921673/p/54473220",
    "https://www.buscalibre.com.mx/libro-el-pequeno-circo-de-asno-y-camello/9788490651759/p/47256219",
-   "https://www.buscalibre.com.mx/libro-el-pequeno-dombey-y-otras-adaptaciones-de-novelas-para-leer-en-publico/9788490656952/p/52803145",
    "https://www.buscalibre.com.mx/libro-el-profeta/9788492143108/p/50596232",
    "https://www.buscalibre.com.mx/libro-el-puente-de-alexander/9788490655252/p/51433944",
    "https://www.buscalibre.com.mx/libro-el-quadre-infantil-ilustrado/9788490653470/p/48975636",
@@ -46631,6 +46634,7 @@
    "https://www.buscalibre.com.mx/libro-mary-barton/9788484287162/p/6990563",
    "https://www.buscalibre.com.mx/libro-maternidad-y-creacion/9788490656785/p/53080363",
    "https://www.buscalibre.com.mx/libro-mejor-cocina-rapida-ofertas-altorrey/9788489592247/p/54636749",
+   "https://www.buscalibre.com.mx/libro-memorias-de-la-casa-muerta/9788484280767/p/1021962",
    "https://www.buscalibre.com.mx/libro-memorias-del-subsuelo/9788490659519/p/54483444",
    "https://www.buscalibre.com.mx/libro-mi-pequeno-gran-diario/9788490656938/p/52787537",
    "https://www.buscalibre.com.mx/libro-middlemarch/9788484280194/p/3313878",
