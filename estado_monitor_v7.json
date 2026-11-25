@@ -307,7 +307,7 @@
      "max": "693.41"
     },
     "2026-11-25": {
-     "min": "817.59",
+     "min": "570.00",
      "max": "817.59"
     }
    }
@@ -5027,7 +5027,7 @@
      "max": "955.37"
     },
     "2026-11-25": {
-     "min": "955.37",
+     "min": "944.95",
      "max": "955.37"
     }
    }
@@ -21284,7 +21284,7 @@
     },
     "2026-11-25": {
      "min": "613.96",
-     "max": "613.96"
+     "max": "619.34"
     }
    }
   },
@@ -26804,7 +26804,7 @@
     },
     "2026-11-25": {
      "min": "613.96",
-     "max": "613.96"
+     "max": "619.34"
     }
    }
   },
@@ -32244,7 +32244,7 @@
     },
     "2026-11-25": {
      "min": "694.61",
-     "max": "694.61"
+     "max": "701.33"
     }
    }
   },
@@ -46426,17 +46426,15 @@
   "github": "2026-11-25"
  },
  "last_scan": {
-  "utc": "2026-11-25T16:42:59+00:00",
-  "complete": false,
+  "utc": "2026-11-25T17:25:46+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -46464,7 +46462,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-25T15:39:41+00:00",
+ "last_complete_catalog_utc": "2026-11-25T17:25:46+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
