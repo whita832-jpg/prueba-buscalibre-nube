@@ -9889,6 +9889,10 @@
     "2026-11-25": {
      "min": "703.44",
      "max": "722.14"
+    },
+    "2026-11-26": {
+     "min": "722.14",
+     "max": "722.14"
     }
    }
   },
@@ -47954,17 +47958,15 @@
   "github": "2026-11-26"
  },
  "last_scan": {
-  "utc": "2026-11-26T07:39:50+00:00",
-  "complete": false,
+  "utc": "2026-11-26T08:12:51+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -47992,7 +47994,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-26T06:38:14+00:00",
+ "last_complete_catalog_utc": "2026-11-26T08:12:51+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -48159,6 +48161,7 @@
    "https://www.buscalibre.com.mx/libro-los-demonios/9788490651926/p/47387586",
    "https://www.buscalibre.com.mx/libro-los-embajadores/9788490658680/p/54144543",
    "https://www.buscalibre.com.mx/libro-los-hermanos-karamazov/9788484289210/p/36720173",
+   "https://www.buscalibre.com.mx/libro-los-libros-de-cuentos/9788484282891/p/3347210",
    "https://www.buscalibre.com.mx/libro-los-origenes-de-roma-en-papel/9788496617339/p/48528020",
    "https://www.buscalibre.com.mx/libro-los-otros-sherlocks-holmes-1892-1944-antologia-clxi-alba-clasica/9788490658321/p/53977974",
    "https://www.buscalibre.com.mx/libro-los-premios-de-la-gente/9788490654675/p/51338958",
