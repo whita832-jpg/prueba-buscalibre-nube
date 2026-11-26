@@ -4152,7 +4152,7 @@
     },
     "2026-11-26": {
      "min": "705.42",
-     "max": "743.42"
+     "max": "862.18"
     }
    }
   },
@@ -10967,7 +10967,7 @@
      "max": "1046.43"
     },
     "2026-11-26": {
-     "min": "1046.43",
+     "min": "843.56",
      "max": "1141.56"
     }
    }
@@ -12911,7 +12911,7 @@
      "max": "1011.90"
     },
     "2026-11-26": {
-     "min": "1011.90",
+     "min": "817.66",
      "max": "1103.89"
     }
    }
@@ -19547,7 +19547,7 @@
      "max": "613.77"
     },
     "2026-11-26": {
-     "min": "613.77",
+     "min": "487.50",
      "max": "669.57"
     }
    }
@@ -22023,7 +22023,7 @@
      "max": "613.77"
     },
     "2026-11-26": {
-     "min": "613.77",
+     "min": "487.50",
      "max": "624.92"
     }
    }
@@ -26187,7 +26187,7 @@
      "max": "610.28"
     },
     "2026-11-26": {
-     "min": "613.77",
+     "min": "487.50",
      "max": "624.92"
     }
    }
@@ -26479,7 +26479,7 @@
      "max": "613.77"
     },
     "2026-11-26": {
-     "min": "613.77",
+     "min": "487.50",
      "max": "669.57"
     }
    }
@@ -27659,7 +27659,7 @@
      "max": "555.30"
     },
     "2026-11-26": {
-     "min": "537.25",
+     "min": "487.50",
      "max": "613.83"
     }
    }
@@ -34003,7 +34003,7 @@
      "max": "613.77"
     },
     "2026-11-26": {
-     "min": "613.77",
+     "min": "487.50",
      "max": "669.57"
     }
    }
@@ -38691,7 +38691,7 @@
      "max": "1009.38"
     },
     "2026-11-26": {
-     "min": "1009.38",
+     "min": "925.78",
      "max": "1339.00"
     }
    }
@@ -39243,7 +39243,7 @@
      "max": "993.19"
     },
     "2026-11-26": {
-     "min": "993.19",
+     "min": "925.78",
      "max": "1142.93"
     }
    }
@@ -47982,7 +47982,7 @@
   "github": "2026-11-26"
  },
  "last_scan": {
-  "utc": "2026-11-26T18:34:01+00:00",
+  "utc": "2026-11-26T20:04:41+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -48018,7 +48018,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-26T18:34:01+00:00",
+ "last_complete_catalog_utc": "2026-11-26T20:04:41+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -48189,7 +48189,6 @@
    "https://www.buscalibre.com.mx/libro-los-hermanos-karamazov/9788484289210/p/36720173",
    "https://www.buscalibre.com.mx/libro-los-libros-de-cuentos/9788484282891/p/3347210",
    "https://www.buscalibre.com.mx/libro-los-origenes-de-roma-en-papel/9788496617339/p/48528020",
-   "https://www.buscalibre.com.mx/libro-los-otros-sherlocks-holmes-1892-1944-antologia-clxi-alba-clasica/9788490658321/p/53977974",
    "https://www.buscalibre.com.mx/libro-los-premios-de-la-gente/9788490654675/p/51338958",
    "https://www.buscalibre.com.mx/libro-los-problemas-de-jirafa-infantil-ilustrado/9788490655290/p/51475471",
    "https://www.buscalibre.com.mx/libro-los-problemas-de-pinguino/9788490653364/p/48957166",
