@@ -919,7 +919,7 @@
      "max": "1482.68"
     },
     "2026-11-26": {
-     "min": "1482.68",
+     "min": "1347.89",
      "max": "1617.47"
     }
    }
@@ -1171,7 +1171,7 @@
      "max": "1198.52"
     },
     "2026-11-26": {
-     "min": "1124.35",
+     "min": "999.20",
      "max": "1124.35"
     }
    }
@@ -1599,7 +1599,7 @@
      "max": "1873.77"
     },
     "2026-11-26": {
-     "min": "1873.77",
+     "min": "1717.63",
      "max": "1873.77"
     }
    }
@@ -4336,7 +4336,7 @@
     },
     "2026-11-26": {
      "min": "140.84",
-     "max": "553.18"
+     "max": "605.51"
     }
    }
   },
@@ -5072,7 +5072,7 @@
     },
     "2026-11-26": {
      "min": "185.14",
-     "max": "690.02"
+     "max": "763.92"
     }
    }
   },
@@ -5563,7 +5563,7 @@
      "max": "889.19"
     },
     "2026-11-26": {
-     "min": "889.19",
+     "min": "815.09",
      "max": "889.19"
     }
    }
@@ -23301,6 +23301,10 @@
     "2026-11-23": {
      "min": "522.34",
      "max": "522.34"
+    },
+    "2026-11-26": {
+     "min": "563.56",
+     "max": "563.56"
     }
    }
   },
@@ -25643,7 +25647,7 @@
      "max": "274.65"
     },
     "2026-11-26": {
-     "min": "274.65",
+     "min": "251.76",
      "max": "274.65"
     }
    }
@@ -26996,7 +27000,7 @@
     },
     "2026-11-26": {
      "min": "472.75",
-     "max": "574.56"
+     "max": "577.81"
     }
    }
   },
@@ -29164,7 +29168,7 @@
     },
     "2026-11-26": {
      "min": "455.26",
-     "max": "476.38"
+     "max": "509.08"
     }
    }
   },
@@ -40805,6 +40809,10 @@
     "2026-11-19": {
      "min": "2722.46",
      "max": "2722.46"
+    },
+    "2026-11-26": {
+     "min": "3091.85",
+     "max": "3091.85"
     }
    }
   },
@@ -47955,8 +47963,16 @@
   "https://www.buscalibre.com.mx/libro-la-nueva-grub-street/9788484283713/p/4213940": {
    "days": {
     "2026-11-26": {
-     "min": "1556.59",
+     "min": "1426.88",
      "max": "1556.59"
+    }
+   }
+  },
+  "https://www.buscalibre.com.mx/libro-diarios-1862-1919/9788484285885/p/4058098": {
+   "days": {
+    "2026-11-26": {
+     "min": "1426.88",
+     "max": "1426.88"
     }
    }
   }
@@ -47966,17 +47982,15 @@
   "github": "2026-11-26"
  },
  "last_scan": {
-  "utc": "2026-11-26T17:40:19+00:00",
-  "complete": false,
+  "utc": "2026-11-26T18:11:01+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
     "pages_complete": 7,
     "partial": [],
-    "failed": [
-     8
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
@@ -48004,7 +48018,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-26T14:32:03+00:00",
+ "last_complete_catalog_utc": "2026-11-26T18:11:01+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -48059,6 +48073,7 @@
    "https://www.buscalibre.com.mx/libro-de-quin-color-es-infantil-ilustrado/9788490653395/p/48975633",
    "https://www.buscalibre.com.mx/libro-diario-de-un-escritor/9788484283546/p/4204092",
    "https://www.buscalibre.com.mx/libro-diario-del-ano-de-la-peste/9788490657096/p/52803146",
+   "https://www.buscalibre.com.mx/libro-diarios-1862-1919/9788484285885/p/4058098",
    "https://www.buscalibre.com.mx/libro-diarios-completos/9788490652336/p/47862647",
    "https://www.buscalibre.com.mx/libro-diarios-de-grasmere-y-alfoxden/9788490655122/p/51085010",
    "https://www.buscalibre.com.mx/libro-diccionario-de-los-suenos-de-la-a-la-z/9788495921741/p/3343698",
@@ -48310,8 +48325,10 @@
    "https://www.buscalibre.com.mx/libro-petita-gran-taylor-swift/9788411781596/p/64060226",
    "https://www.buscalibre.com.mx/libro-petita-gran-vivienne-westwood/9788490656112/p/51998545",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-coco-chanel/9788490650400/p/46407238",
+   "https://www.buscalibre.com.mx/libro-petita-i-gran-lucy-maud-montgomery-petita-gran/9788490655283/p/51442081",
    "https://www.buscalibre.com.mx/libro-petonets-de-xocolata-per-a-tota-la-familia/9788490650660/p/46407387",
    "https://www.buscalibre.com.mx/libro-pierre-y-jean/9788490652664/p/48005647",
+   "https://www.buscalibre.com.mx/libro-pioneros/9788484280996/p/1852909",
    "https://www.buscalibre.com.mx/libro-plantas-medicinales-propiedades-curativas/9788489592704/p/64617111",
    "https://www.buscalibre.com.mx/libro-pobre-gente/9788484285526/p/3270089",
    "https://www.buscalibre.com.mx/libro-poesia-selecta/9788411781091/p/63065229",
@@ -48382,6 +48399,7 @@
    "https://www.buscalibre.com.mx/libro-la-carne-la-muerte-y-el-diablo-en-la-literatura-romantica/9788493065751/p/1027776",
    "https://www.buscalibre.com.mx/libro-las-confesiones-de-un-italiano/9788496834804/p/2393644",
    "https://www.buscalibre.com.mx/libro-los-demonios-segun-la-cronica-del-jefe-de-estacion-geyrenhoff/9788496834705/p/2911448",
+   "https://www.buscalibre.com.mx/libro-los-ensayos/9788496834170/p/2517890",
    "https://www.buscalibre.com.mx/libro-los-relatos-del-padre-brown/9788496834897/p/2393651",
    "https://www.buscalibre.com.mx/libro-manuscrito-encontrado-en-zaragoza/9788492649266/p/3023626",
    "https://www.buscalibre.com.mx/libro-memorias-de-ultratumba-estuche-2-vols/9788496136878/p/14871140",
