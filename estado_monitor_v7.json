@@ -47966,7 +47966,7 @@
   "github": "2026-11-26"
  },
  "last_scan": {
-  "utc": "2026-11-26T16:39:29+00:00",
+  "utc": "2026-11-26T17:14:42+00:00",
   "complete": false,
   "catalogs": [
    {
@@ -48000,7 +48000,7 @@
     "closed": true
    }
   ],
-  "products": 384,
+  "products": 385,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
