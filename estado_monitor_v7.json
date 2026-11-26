@@ -1255,7 +1255,7 @@
      "max": "958.41"
     },
     "2026-11-26": {
-     "min": "738.07",
+     "min": "729.97",
      "max": "738.07"
     }
    }
@@ -37835,7 +37835,7 @@
      "max": "664.39"
     },
     "2026-11-26": {
-     "min": "509.57",
+     "min": "505.13",
      "max": "509.57"
     }
    }
@@ -47958,7 +47958,7 @@
   "github": "2026-11-26"
  },
  "last_scan": {
-  "utc": "2026-11-26T09:31:39+00:00",
+  "utc": "2026-11-26T10:41:17+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -47990,11 +47990,11 @@
     "closed": true
    }
   ],
-  "products": 383,
+  "products": 381,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-26T09:31:39+00:00",
+ "last_complete_catalog_utc": "2026-11-26T10:41:17+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -48171,13 +48171,11 @@
    "https://www.buscalibre.com.mx/libro-mary-barton/9788484287162/p/6990563",
    "https://www.buscalibre.com.mx/libro-maternidad-y-creacion/9788490656785/p/53080363",
    "https://www.buscalibre.com.mx/libro-mejor-cocina-rapida-ofertas-altorrey/9788489592247/p/54636749",
-   "https://www.buscalibre.com.mx/libro-memorias-de-la-casa-muerta/9788484280767/p/1021962",
    "https://www.buscalibre.com.mx/libro-memorias-del-subsuelo/9788490659519/p/54483444",
    "https://www.buscalibre.com.mx/libro-mi-pequeno-gran-diario/9788490656938/p/52787537",
    "https://www.buscalibre.com.mx/libro-middlemarch/9788484280194/p/3313878",
    "https://www.buscalibre.com.mx/libro-mieko-baila/9788411780391/p/55862314",
    "https://www.buscalibre.com.mx/libro-miles-davis-y-kind-of-blue/9788484281436/p/1021968",
-   "https://www.buscalibre.com.mx/libro-mis-primeros-poemas-antologia-de-poesia-espanola-para-ninos-y-ninas/9788490659236/p/54400071",
    "https://www.buscalibre.com.mx/libro-mst03-universo-spiderman/9788411015141/p/54109353",
    "https://www.buscalibre.com.mx/libro-mujercitas-tapa-dura/9788412188875/p/54898613",
    "https://www.buscalibre.com.mx/libro-mundo-y-nina-mariposa/9788490652367/p/47862674",
@@ -48206,7 +48204,6 @@
    "https://www.buscalibre.com.mx/libro-pequena-grande-audrey-hepburn/9788490651117/p/46551352",
    "https://www.buscalibre.com.mx/libro-pequena-grande-carmen-amaya/9788490654972/p/50752852",
    "https://www.buscalibre.com.mx/libro-pequena-grande-dian-fossey/9788490653012/p/48169135",
-   "https://www.buscalibre.com.mx/libro-pequena-grande-ella-fitzgerald/9788490652749/p/48005642",
    "https://www.buscalibre.com.mx/libro-pequena-grande-georgia-o-keeffe/9788490654477/p/50025514",
    "https://www.buscalibre.com.mx/libro-pequena-grande-gloria-fuertes/9788490653487/p/48975637",
    "https://www.buscalibre.com.mx/libro-pequena-grande-hannah-arendt/9788490657355/p/53150354",
