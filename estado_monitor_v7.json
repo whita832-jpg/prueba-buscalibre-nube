@@ -10024,7 +10024,7 @@
     },
     "2026-11-26": {
      "min": "485.03",
-     "max": "485.03"
+     "max": "519.58"
     }
    }
   },
@@ -47951,6 +47951,14 @@
      "max": "1134.15"
     }
    }
+  },
+  "https://www.buscalibre.com.mx/libro-la-nueva-grub-street/9788484283713/p/4213940": {
+   "days": {
+    "2026-11-26": {
+     "min": "1556.59",
+     "max": "1556.59"
+    }
+   }
   }
  },
  "alerted": {},
@@ -47958,7 +47966,7 @@
   "github": "2026-11-26"
  },
  "last_scan": {
-  "utc": "2026-11-26T12:38:26+00:00",
+  "utc": "2026-11-26T13:43:56+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -47990,11 +47998,11 @@
     "closed": true
    }
   ],
-  "products": 381,
+  "products": 382,
   "candidates": 2
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-26T12:38:26+00:00",
+ "last_complete_catalog_utc": "2026-11-26T13:43:56+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -48080,6 +48088,7 @@
    "https://www.buscalibre.com.mx/libro-el-misterio-de-notting-hill/9788490651100/p/46551347",
    "https://www.buscalibre.com.mx/libro-el-origen-de-las-especies-tapa-dura/9788495921673/p/54473220",
    "https://www.buscalibre.com.mx/libro-el-pequeno-circo-de-asno-y-camello/9788490651759/p/47256219",
+   "https://www.buscalibre.com.mx/libro-el-pequeno-dombey-y-otras-adaptaciones-de-novelas-para-leer-en-publico/9788490656952/p/52803145",
    "https://www.buscalibre.com.mx/libro-el-profeta/9788492143108/p/50596232",
    "https://www.buscalibre.com.mx/libro-el-puente-de-alexander/9788490655252/p/51433944",
    "https://www.buscalibre.com.mx/libro-el-quadre-infantil-ilustrado/9788490653470/p/48975636",
@@ -48142,6 +48151,7 @@
    "https://www.buscalibre.com.mx/libro-la-nena-mes-petita-de-tota-la-escola-infantil-ilustrado/9788490653975/p/49170863",
    "https://www.buscalibre.com.mx/libro-la-nina-duende/9788490657393/p/53177405",
    "https://www.buscalibre.com.mx/libro-la-nina-mas-pequena-de-toda-la-escuela/9788490653821/p/49170859",
+   "https://www.buscalibre.com.mx/libro-la-nueva-grub-street/9788484283713/p/4213940",
    "https://www.buscalibre.com.mx/libro-la-pequena-dorrit/9788484286707/p/4855437",
    "https://www.buscalibre.com.mx/libro-la-pequena-hija-del-ganges/9788484289692/p/40335845",
    "https://www.buscalibre.com.mx/libro-la-piedra-lunar/9788484285977/p/4082546",
@@ -48298,7 +48308,6 @@
    "https://www.buscalibre.com.mx/libro-petita-gran-taylor-swift/9788411781596/p/64060226",
    "https://www.buscalibre.com.mx/libro-petita-gran-vivienne-westwood/9788490656112/p/51998545",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-coco-chanel/9788490650400/p/46407238",
-   "https://www.buscalibre.com.mx/libro-petita-i-gran-lucy-maud-montgomery-petita-gran/9788490655283/p/51442081",
    "https://www.buscalibre.com.mx/libro-petonets-de-xocolata-per-a-tota-la-familia/9788490650660/p/46407387",
    "https://www.buscalibre.com.mx/libro-pierre-y-jean/9788490652664/p/48005647",
    "https://www.buscalibre.com.mx/libro-plantas-medicinales-propiedades-curativas/9788489592704/p/64617111",
