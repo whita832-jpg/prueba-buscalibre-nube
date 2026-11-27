@@ -10409,6 +10409,10 @@
     "2026-11-26": {
      "min": "472.35",
      "max": "519.58"
+    },
+    "2026-11-27": {
+     "min": "472.35",
+     "max": "472.35"
     }
    }
   },
@@ -49518,7 +49522,7 @@
   "github": "2026-11-27"
  },
  "last_scan": {
-  "utc": "2026-11-27T07:37:38+00:00",
+  "utc": "2026-11-27T09:11:57+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -49554,7 +49558,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-27T07:37:38+00:00",
+ "last_complete_catalog_utc": "2026-11-27T09:11:57+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -49641,6 +49645,7 @@
    "https://www.buscalibre.com.mx/libro-el-misterio-de-notting-hill/9788490651100/p/46551347",
    "https://www.buscalibre.com.mx/libro-el-origen-de-las-especies-tapa-dura/9788495921673/p/54473220",
    "https://www.buscalibre.com.mx/libro-el-pequeno-circo-de-asno-y-camello/9788490651759/p/47256219",
+   "https://www.buscalibre.com.mx/libro-el-pequeno-dombey-y-otras-adaptaciones-de-novelas-para-leer-en-publico/9788490656952/p/52803145",
    "https://www.buscalibre.com.mx/libro-el-profeta/9788492143108/p/50596232",
    "https://www.buscalibre.com.mx/libro-el-puente-de-alexander/9788490655252/p/51433944",
    "https://www.buscalibre.com.mx/libro-el-quadre-infantil-ilustrado/9788490653470/p/48975636",
@@ -49857,7 +49862,6 @@
    "https://www.buscalibre.com.mx/libro-petita-gran-rosa-parks-28/9788490655696/p/51622326",
    "https://www.buscalibre.com.mx/libro-petita-gran-rosalind-franklin/9788490658598/p/54044928",
    "https://www.buscalibre.com.mx/libro-petita-gran-simone-de-beauvoir-catalan/9788490654859/p/50657615",
-   "https://www.buscalibre.com.mx/libro-petita-gran-taylor-swift/9788411781596/p/64060226",
    "https://www.buscalibre.com.mx/libro-petita-gran-vivienne-westwood/9788490656112/p/51998545",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-coco-chanel/9788490650400/p/46407238",
    "https://www.buscalibre.com.mx/libro-petita-i-gran-lucy-maud-montgomery-petita-gran/9788490655283/p/51442081",
