@@ -51054,39 +51054,47 @@
   "github": "2026-11-28"
  },
  "last_scan": {
-  "utc": "2026-11-28T07:37:15+00:00",
-  "complete": true,
+  "utc": "2026-11-28T08:41:55+00:00",
+  "complete": false,
   "catalogs": [
    {
     "name": "Alba",
-    "pages_complete": 7,
+    "pages_complete": 0,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     1
+    ],
+    "closed": false
    },
    {
     "name": "Alba Editorial",
-    "pages_complete": 1,
+    "pages_complete": 0,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     1
+    ],
+    "closed": false
    },
    {
     "name": "Acantilado",
-    "pages_complete": 1,
+    "pages_complete": 0,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     1
+    ],
+    "closed": false
    },
    {
     "name": "El Acantilado",
-    "pages_complete": 1,
+    "pages_complete": 0,
     "partial": [],
-    "failed": [],
-    "closed": true
+    "failed": [
+     1
+    ],
+    "closed": false
    }
   ],
-  "products": 384,
+  "products": 0,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
