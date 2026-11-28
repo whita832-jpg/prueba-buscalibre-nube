@@ -22337,6 +22337,10 @@
     "2026-11-27": {
      "min": "477.49",
      "max": "484.95"
+    },
+    "2026-11-28": {
+     "min": "484.95",
+     "max": "484.95"
     }
    }
   },
@@ -51054,51 +51058,43 @@
   "github": "2026-11-28"
  },
  "last_scan": {
-  "utc": "2026-11-28T10:17:42+00:00",
-  "complete": false,
+  "utc": "2026-11-28T12:10:45+00:00",
+  "complete": true,
   "catalogs": [
    {
     "name": "Alba",
-    "pages_complete": 0,
+    "pages_complete": 7,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Alba Editorial",
-    "pages_complete": 0,
+    "pages_complete": 1,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "Acantilado",
-    "pages_complete": 0,
+    "pages_complete": 1,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    },
    {
     "name": "El Acantilado",
-    "pages_complete": 0,
+    "pages_complete": 1,
     "partial": [],
-    "failed": [
-     1
-    ],
-    "closed": false
+    "failed": [],
+    "closed": true
    }
   ],
-  "products": 0,
+  "products": 384,
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-28T07:37:15+00:00",
+ "last_complete_catalog_utc": "2026-11-28T12:10:45+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
@@ -51431,6 +51427,7 @@
    "https://www.buscalibre.com.mx/libro-sin-trama-y-sin-final-99-consejos-para-escritores/9788490659328/p/54331679",
    "https://www.buscalibre.com.mx/libro-su-excelencia-eugene-rougon/9788411780636/p/57029925",
    "https://www.buscalibre.com.mx/libro-tareas-domesticas-para-emancipados/9788484281986/p/1827855",
+   "https://www.buscalibre.com.mx/libro-tenemos-un-huerto/9788490658666/p/54093178",
    "https://www.buscalibre.com.mx/libro-tenim-un-hort/9788490658673/p/54104824",
    "https://www.buscalibre.com.mx/libro-teresa-de-calcuta/9788490654668/p/50655303",
    "https://www.buscalibre.com.mx/libro-tess-de-los-d-urberville/9788490653425/p/48975634",
@@ -51440,7 +51437,6 @@
    "https://www.buscalibre.com.mx/libro-un-heroe-de-nuestro-tiempo/9788490650387/p/46302981",
    "https://www.buscalibre.com.mx/libro-un-monstre/9788484289746/p/38285946",
    "https://www.buscalibre.com.mx/libro-un-monstruo/9788484289678/p/38285945",
-   "https://www.buscalibre.com.mx/libro-veronica/9788490654682/p/50591666",
    "https://www.buscalibre.com.mx/libro-veronica/9788490654699/p/50647956",
    "https://www.buscalibre.com.mx/libro-viaje-a-traves-de-la-moda/9788490658215/p/53697779",
    "https://www.buscalibre.com.mx/libro-viajeros/9788490656815/p/52901813",
