@@ -40140,7 +40140,7 @@
     },
     "2026-11-27": {
      "min": "841.62",
-     "max": "849.07"
+     "max": "913.04"
     }
    }
   },
@@ -40708,7 +40708,7 @@
     },
     "2026-11-27": {
      "min": "841.62",
-     "max": "849.07"
+     "max": "959.89"
     }
    }
   },
@@ -49522,7 +49522,7 @@
   "github": "2026-11-27"
  },
  "last_scan": {
-  "utc": "2026-11-28T02:37:08+00:00",
+  "utc": "2026-11-28T03:41:00+00:00",
   "complete": true,
   "catalogs": [
    {
@@ -49558,7 +49558,7 @@
   "candidates": 0
  },
  "last_failure_notice_day": "2026-11-07",
- "last_complete_catalog_utc": "2026-11-28T02:37:08+00:00",
+ "last_complete_catalog_utc": "2026-11-28T03:41:00+00:00",
  "last_complete_catalog_urls": {
   "Alba": [
    "https://www.buscalibre.com.mx/libro-a-contrapelo/9788411781442/p/63783469",
